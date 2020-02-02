@@ -8,7 +8,13 @@ Linux 系统相关
 .. section-numbering::
 .. toctree::
    :maxdepth: 2
-   :caption: Sphinx
+   :caption: CentOS
+   :numbered:
+
+.. section-numbering::
+.. toctree::
+   :maxdepth: 2
+   :caption: Linux 软件
    :numbered:
 
 Indices and tables
