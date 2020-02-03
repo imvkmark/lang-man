@@ -11,6 +11,8 @@ Linux 系统相关
    :caption: CentOS
    :numbered:
 
+   centos/user/auto-login-with-ssh-key
+
 .. section-numbering::
 .. toctree::
    :maxdepth: 2
