@@ -1,5 +1,5 @@
-[转+] 设置 SSH 通过密钥登录,免密登录服务器
-===========================================
+[转+] 设置 SSH 安全通过密钥,免密码登录服务器
+=============================================
 
 原文地址: `设置 SSH 通过密钥登录 <https://hyjk2000.github.io/2012/03/16/how-to-set-up-ssh-keys/>`_
 
@@ -16,7 +16,7 @@
 
 首先在服务器上制作密钥对。首先用密码登录到你打算使用密钥登录的账户，然后执行以下命令：
 
-.. code-block::
+.. code-block:: text
 
    $ cd ~/
    $ ssh-keygen  *
@@ -31,14 +31,14 @@
 
 键入以下命令，在服务器上安装公钥：
 
-.. code-block::
+.. code-block:: text
 
    $ cd .ssh
    $ cat id_rsa.pub >> authorized_keys
 
 如此便完成了公钥的安装。为了确保连接成功，请保证以下文件权限正确：
 
-.. code-block::
+.. code-block:: text
 
    $ chmod 600 authorized_keys
    $ chmod 700 ~/.ssh
@@ -47,26 +47,26 @@
 
 编辑 ``/etc/ssh/sshd_config`` 文件，进行如下设置：
 
-.. code-block::
+.. code-block:: text
 
    RSAAuthentication yes
    PubkeyAuthentication yes
 
 另外，请留意 root 用户能否通过 SSH 登录：
 
-.. code-block::
+.. code-block:: text
 
    PermitRootLogin yes
 
 当你完成全部设置，并以密钥方式登录成功后，再禁用密码登录：
 
-.. code-block::
+.. code-block:: text
 
    PasswordAuthentication no
 
 最后，重启 SSH 服务：
 
-.. code-block::
+.. code-block:: text
 
    $ systemctl restart sshd
 
@@ -77,7 +77,7 @@ config 配置
 
 ``config`` 的配置很简单，只要指明哪个用户登录哪台远程服务器需要使用哪个私钥即可。下面给出一个配置示例。
 
-.. code-block::
+.. code-block:: text
 
    Host github.com
        User jaychen
@@ -89,7 +89,7 @@ config 配置
 **另一种方式**
 支持名字的映射
 
-.. code-block::
+.. code-block:: text
 
    Host test-liexiang
        HostName 192.168.1.21
@@ -104,6 +104,58 @@ config 配置
 * IdentityFile 指明使用哪个私钥文件。
 
 编写好 ``config`` 文件之后，需要把 ``config`` 文件的权限改为 ``rw-r--r--`` 。如果权限过大，ssh 会禁止登录。
+
+
+
+修改 ssh 默认登录的端口
+-------------------------
+
+
+查看系统版本
+
+.. code-block:: text
+
+   # cat /etc/system-release
+   CentOS Linux release 8.1.1911 (Core)
+
+查看是否安装过SSH软件(centos 命令)：
+
+.. code-block:: text
+
+   # rpm -qa | grep ssh
+   openssh-7.4p1-16.el7.x86_64
+   openssh-server-7.4p1-16.el7.x86_64
+   libssh2-1.4.3-10.el7_2.1.x86_64
+   openssh-clients-7.4p1-16.el7.x86_64
+
+用编辑器打开SSH配置文件，修改端口：
+
+.. code-block:: text
+
+   # vi /etc/ssh/sshd_config
+
+找到行 ``#Port 22`` （默认端口为22），修改端口为其他端口, 不要出现端口冲突
+
+.. code-block:: text
+
+   Port 5022
+
+重启SSH服务：
+
+.. code-block:: text
+
+   # systemctl restart sshd
+
+修改防火墙，允许访问 5022 的端口，并且重启防火墙服务：
+
+.. code-block:: text
+
+   # 配置 5022
+   $ firewall-cmd --permanent --zone=public --add-port=5022/tcp
+   # 重启
+   $ firewall-cmd --reload
+
+如果是 Aliyun 主机, 则需要在对应的安全组打开端口访问权限, 否则一样无法访问主机
 
 参考文章:
 
