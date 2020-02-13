@@ -5,30 +5,25 @@
 
 Linux 系统相关
 ======================================
-.. section-numbering::
 .. toctree::
    :maxdepth: 2
    :caption: Linux 操作
-   :numbered:
 
    user/ssh-port-modify.md
    user/ssh-login-withoutpwd.md
 
-.. section-numbering::
 .. toctree::
    :maxdepth: 2
    :caption: Centos 服务器
 
-   man/man-number-desc.md
+   centos/index
 
-.. section-numbering::
 .. toctree::
    :maxdepth: 2
    :caption: Linux Man
 
    man/man-number-desc.md
 
-.. section-numbering::
 .. toctree::
    :maxdepth: 2
    :caption: Linux 软件

@@ -38,7 +38,7 @@ Remi repository 是包含最新版本 PHP 和 MySQL 包的 Linux 源，由 Remi 
 官方源 : https://rpms.remirepo.net/
 Aliyun : https://developer.aliyun.com/mirror/remi
 
-```console/
+```console
 # 设置 remi 库 , 二选一
 # official
 $ yum install http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
