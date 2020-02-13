@@ -8,10 +8,25 @@ Linux 系统相关
 .. section-numbering::
 .. toctree::
    :maxdepth: 2
-   :caption: CentOS
+   :caption: Linux 操作
    :numbered:
 
-   centos/user/auto-login-with-ssh-key
+   user/ssh-port-modify.md
+   user/ssh-login-withoutpwd.md
+
+.. section-numbering::
+.. toctree::
+   :maxdepth: 2
+   :caption: Centos 服务器
+
+   man/man-number-desc.md
+
+.. section-numbering::
+.. toctree::
+   :maxdepth: 2
+   :caption: Linux Man
+
+   man/man-number-desc.md
 
 .. section-numbering::
 .. toctree::
