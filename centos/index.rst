@@ -6,3 +6,4 @@ Centos 服务器
 
    1-init/system-install.md
    1-init/system-upgrade-curl.md
+   1-init/system-hostname.md
