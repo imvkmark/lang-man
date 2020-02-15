@@ -29,6 +29,8 @@ Linux 系统相关
    :caption: Linux 软件
    :numbered:
 
+   software/index
+
 Indices and tables
 ==================
 
