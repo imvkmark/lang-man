@@ -20,6 +20,12 @@ Linux 系统相关
 
 .. toctree::
    :maxdepth: 2
+   :caption: Mac 软件和使用
+
+   mac/index
+
+.. toctree::
+   :maxdepth: 2
    :caption: Linux Man
 
    man/man-number-desc.md

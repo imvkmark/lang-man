@@ -4,3 +4,4 @@
 
    supervisor/install.md
    redis/install.md
+   nginx/index
