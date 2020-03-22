@@ -5,3 +5,4 @@ Mac
    :caption: Linux 操作
 
    upgrade-bash.md
+   install_brew_slow.md
