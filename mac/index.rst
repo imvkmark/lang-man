@@ -6,3 +6,4 @@ Mac
 
    upgrade-bash.md
    install_brew_slow.md
+   install_lnmp.md
