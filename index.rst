@@ -3,14 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Linux 系统相关
+Man 文档
 ======================================
 .. toctree::
    :maxdepth: 2
-   :caption: Linux 操作
+   :caption: 介绍
 
-   user/ssh-port-modify.md
-   user/ssh-login-withoutpwd.md
+   readme
 
 .. toctree::
    :maxdepth: 2
