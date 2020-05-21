@@ -6,3 +6,4 @@
 
    appledoc
    javadoc
+   flutter
