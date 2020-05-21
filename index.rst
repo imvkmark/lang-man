@@ -4,7 +4,7 @@ Man 文档
    :maxdepth: 1
    :caption: 介绍
 
-   readme
+   intro/readme.md
 
 .. toctree::
    :maxdepth: 2

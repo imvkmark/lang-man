@@ -207,7 +207,6 @@
    iftop.md
    ifup.md
    indent.md
-   index.rst
    info.md
    init.md
    inotifywait.md
