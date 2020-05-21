@@ -11,9 +11,6 @@
    apachectl.md
    apk.md
    apropos.md
-   apt-get.md
-   apt-key.md
-   apt-sortpkgs.md
    aptitude.md
    ar.md
    arch.md
@@ -568,7 +565,6 @@
    xz.md
    yes.md
    ypdomainname.md
-   yum.md
    zcat.md
    zfore.md
    zip.md

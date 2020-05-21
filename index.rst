@@ -4,10 +4,10 @@ Man 文档
    :maxdepth: 2
    :caption: 介绍
 
-   readme
+   readme.md
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: 普通命令(1)
 
    commands/index

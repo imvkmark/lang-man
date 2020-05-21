@@ -1,4 +1,5 @@
 # Linux man 命令后面的数字含义及作用
+
 Linux的man很强大，该手册分成很多section，使用man时可以指定不同的section来浏览，各个section意义如下： 
 
 > 1 - commands

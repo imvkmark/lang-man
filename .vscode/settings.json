@@ -1,5 +1,7 @@
 {
-    "restructuredtext.confPath": "${workspaceFolder}",
     "python.pythonPath": "/usr/local/bin/python3",
-    "restructuredtext.linter.extraArgs": ["--ignore D001"]
+    "restructuredtext.linter.extraArgs": [
+        "--ignore D001"
+    ],
+    "restructuredtext.confPath": "${workspaceFolder}"
 }
