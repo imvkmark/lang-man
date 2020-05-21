@@ -2,16 +2,17 @@
 
 Linux的man很强大，该手册分成很多section，使用man时可以指定不同的section来浏览，各个section意义如下： 
 
-> 1 - commands
-> 2 - system calls
-> 3 - library calls
-> 4 - special files
-> 5 - file formats and convertions
-> 6 - games for linux
-> 7 - macro packages and conventions
-> 8 - system management commands
-> 9 - 其他
-
+```
+1 - commands
+2 - system calls
+3 - library calls
+4 - special files
+5 - file formats and convertions
+6 - games for linux
+7 - macro packages and conventions
+8 - system management commands
+9 - 其他
+```
 解释一下
 
 > 1 是普通的命令

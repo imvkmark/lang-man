@@ -1,10 +1,10 @@
 Man 文档
 ======================================
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 介绍
 
-   readme.md
+   readme
 
 .. toctree::
    :maxdepth: 2
@@ -59,10 +59,16 @@ Man 文档
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: 其他(9)
 
    other/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: OS
+
+   os/index
 
 Indices and tables
 ==================
