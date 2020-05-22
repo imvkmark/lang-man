@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = '标记语言大全'
+project = 'Man 文档'
 copyright = '2020, Duoli'
 author = 'Duoli'
 
