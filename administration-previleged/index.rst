@@ -4,7 +4,6 @@
    :maxdepth: 1
 
    apachectl.md
-   aptitude.md
    arpd.md
    arping.md
    arptables.md

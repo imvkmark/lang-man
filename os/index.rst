@@ -7,6 +7,7 @@
    debian/apt-get
    debian/apt-key
    debian/apt-sortpkgs
+   debian/aptitude
 
 .. toctree::
    :maxdepth: 1
