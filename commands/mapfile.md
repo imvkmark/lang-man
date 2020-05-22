@@ -76,7 +76,7 @@ for i in ${!target_array[@]}; do
 done
 ```
 
-### 注意
+## 注意
 
 1. 该命令是bash内建命令，相关的帮助信息请查看`help`命令。
 2. bash内建命令readarray是mapfile的同义词。

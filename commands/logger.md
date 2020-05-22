@@ -3,17 +3,16 @@ logger
 
 在系统日志中记录相应条目
 
-## 补充说明
 
 **logger命令** 是用于往系统中写入日志，他提供一个shell命令接口到syslog系统模块
 
-###  语法
+##  语法
 
 ```
 logger [options] [message]
 ```
 
-###  选项
+##  选项
 
 ```
  -T, --tcp             使用流连接(TCP)
@@ -32,7 +31,7 @@ logger [options] [message]
  -V, --version         输出版本信息并退出
 ```
 
-### 例子
+## 例子
 
 ```
 logger -p syslog.info "backup.sh is starting"

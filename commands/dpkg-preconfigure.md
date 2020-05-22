@@ -3,17 +3,16 @@ dpkg-preconfigure
 
 Debian Linux中软件包安装之前询问问题
 
-## 补充说明
 
 **dpkg-preconfigure命令** 用于在Debian Linux中软件包安装之前询问问题。
 
-###  语法
+##  语法
 
 ```
 dpkg-preconfigure(选项)(参数)
 ```
 
-###  选项
+##  选项
 
 ```
 -f：选择使用的前端；
@@ -21,11 +20,11 @@ dpkg-preconfigure(选项)(参数)
 --apt：在apt模式下运行。
 ```
 
-###  参数
+##  参数
 
 软件包：指定“.deb”软件包。
 
-###  实例
+##  实例
 
 导入debconf模板：
 

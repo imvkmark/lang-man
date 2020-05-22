@@ -3,11 +3,10 @@ ethtool
 
 显示或修改以太网卡的配置信息
 
-## 补充说明
 
 ethtool命令用于获取以太网卡的配置信息，或者修改这些配置。这个命令比较复杂，功能特别多。
 
-###  语法
+##  语法
 
 ```
 ethtool [ -a | -c | -g | -i | -d | -k | -r | -S |] ethX
@@ -23,7 +22,7 @@ ethtool [-s] ethX [speed 10|100|1000] [duplex half|full] [autoneg on|off] [port 
 [wol p|u|m|b|a|g|s|d...] [sopass xx:yy:zz:aa:bb:cc] [msglvl N]
 ```
 
-###  选项
+##  选项
 
 ```
 -a 查看网卡中 接收模块RX、发送模块TX和Autonegotiate模块的状态：启动on 或 停用off。
@@ -127,7 +126,7 @@ driver: bnx2 version: 1.4.30 firmware-version: 1.8.0.5 bus-info: 0000:09:00.0
 
 由上可见，ethtool命令用于显示/配置网卡硬件（寄存器）。  
 
-###  实例
+##  实例
 
 查看机器上网卡的速度：百兆还是千兆，请输入：
 

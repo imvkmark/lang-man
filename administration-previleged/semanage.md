@@ -3,18 +3,17 @@ semanage
 
 默认目录的安全上下文查询与修改
 
-## 补充说明
 
 **semanage命令** 是用来查询与修改SELinux默认目录的安全上下文。SELinux的策略与规则管理相关命令：seinfo命令、sesearch命令、getsebool命令、setsebool命令、semanage命令。
 
-###  语法
+##  语法
 
 ```
 semanage {login|user|port|interface|fcontext|translation} -l
 semanage fcontext -{a|d|m} [-frst] file_spec
 ```
 
-###  选项
+##  选项
 
 ```
 -l：查询。
@@ -24,7 +23,7 @@ fcontext：主要用在安全上下文方面。
 -d：删除。
 ```
 
-###  实例
+##  实例
 
 查询一下`/var/www/html`的默认安全性本文的设置：
 

@@ -149,7 +149,7 @@ ZhuangZhu-74
        127.0.0.1
 ```
 
-### 注意
+## 注意
 
 1. 该命令是`GNU coreutils`包中的命令，相关的帮助信息请查看`man -s 1 nl`，`info coreutils 'nl invocation'`。
 

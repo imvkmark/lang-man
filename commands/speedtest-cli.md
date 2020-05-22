@@ -3,7 +3,6 @@ speedtest-cli
 
 命令行下测试服务器外网速度
 
-## 补充说明
 
 **speedtest-cli** 是一个使用python编写的命令行脚本，通过调用speedtest.net测试上下行的接口来完成速度测试，最后我会测试运维生存时间所在服务器的外网速度。项目地址：https://github.com/sivel/speedtest-cli
 
@@ -65,7 +64,7 @@ speedtest-cli需要在python 2.4-3.4的环境下，安装方法都很简单，�
 --version        Show the version number and exit
 ```
 
-###  实例
+##  实例
 
 列出所有在中国的测试服务器：
 

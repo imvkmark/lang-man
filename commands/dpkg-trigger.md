@@ -3,17 +3,16 @@ dpkg-trigger
 
 Debian Linux下的软件包触发器
 
-## 补充说明
 
 **dpkg-trigger命令** 是Debian Linux下的软件包触发器。
 
-###  语法
+##  语法
 
 ```
 dpkg-trigger(选项)(参数)
 ```
 
-###  选项
+##  选项
 
 ```
 --check-supported：检查运行的dpkg是否支持触发器，返回值为0，则支持触发器。
@@ -23,7 +22,7 @@ dpkg-trigger(选项)(参数)
 --by-package=<软件包>：覆盖触发器等待者。
 ```
 
-###  参数
+##  参数
 
 触发器名：指定触发器名称。
 

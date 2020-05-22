@@ -3,7 +3,6 @@ iotop
 
 用来监视磁盘I/O使用状况的工具
 
-## 补充说明
 
 **iotop命令** 是一个用来监视磁盘I/O使用状况的top类工具。iotop具有与top相似的UI，其中包括PID、用户、I/O、进程等相关信息。Linux下的IO统计工具如iostat，nmon等大多数是只能统计到per设备的读写情况，如果你想知道每个进程是如何使用IO的就比较麻烦，使用iotop命令可以很方便的查看。
 
@@ -32,13 +31,13 @@ python setup.py build
 python setup.py install
 ```
 
-###  语法
+##  语法
 
 ```
 iotop（选项）
 ```
 
-###  选项
+##  选项
 
 ```
 -o：只显示有io操作的进程
@@ -58,7 +57,7 @@ iotop（选项）
 5.  a：显示累积使用量。
 6.  q：退出。
 
-###  实例
+##  实例
 
 直接执行iotop就可以看到效果了：
 

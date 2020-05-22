@@ -3,17 +3,16 @@ compress
 
 使用Lempress-Ziv编码压缩数据文件
 
-## 补充说明
 
 **compress命令** 使用“Lempress-Ziv”编码压缩数据文件。compress是个历史悠久的压缩程序，文件经它压缩后，其名称后面会多出".Z"的扩展名。当要解压缩时，可执行uncompress指令。事实上uncompress是指向compress的符号连接，因此不论是压缩或解压缩，都可通过compress指令单独完成。
 
-### 语法
+## 语法
 
 ```
 compress(选项)(参数)
 ```
 
-### 选项
+## 选项
 
 ```
 -f：不提示用户，强制覆盖掉目标文件；

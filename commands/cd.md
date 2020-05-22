@@ -82,7 +82,7 @@ cd new_var
 shopt -u cdable_vars
 ```
 
-### 注意
+## 注意
 
 1. 该命令是bash内建命令，相关的帮助信息请查看`help`命令。
 

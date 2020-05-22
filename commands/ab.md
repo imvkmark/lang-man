@@ -3,11 +3,10 @@ ab
 
 Apache服务器的性能测试工具
 
-## 补充说明
 
 **ab命令** 是一个测试你 Apache http 服务器的工具，你可以通过这个工具，指定一个单位时间内向 apache 发出的请求数量来看看你的 Apache 和机器配合的性能如何。
 
-### 语法
+## 语法
 
 ```
 ab [ -A auth-username:password ] [ -c concurrency ] [ -C cookie-name=value
@@ -19,7 +18,7 @@ name:password ] [ -q ] [ -s ] [ -S ] [ -t timelimit ] [ -T content-type  ]
 name[:port]/path
 ```
 
-### 选项
+## 选项
 
 ```
 -A auth-username:password

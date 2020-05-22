@@ -3,18 +3,17 @@ xz
 
 POSIX 平台开发具有高压缩率的工具
 
-## 补充说明
 
 **xz命令** XZ Utils 是为 POSIX 平台开发具有高压缩率的工具。它使用 LZMA2 压缩算法，生成的压缩文件比 POSIX 平台传统使用的 gzip、bzip2 生成的压缩文件更小，而且解压缩速度也很快。最初 XZ Utils 的是基于 LZMA-SDK 开发，但是 LZMA-SDK 包含了一些 WINDOWS 平台的特性，所以 XZ Utils 为以适应 POSIX 平台作了大幅的修改。XZ Utils 的出现也是为了取代 POSIX 系统中旧的 LZMA Utils。
 
-### 语法
+## 语法
 
 ```
 xz(选项)(参数)
 xz [OPTION]... [FILE]...
 ```
 
-### 选项
+## 选项
 
 ```
 -z, --compress    # 强制压缩

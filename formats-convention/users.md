@@ -35,7 +35,7 @@ FILE（可选）：记录用户当前登录情况的文件；默认使用 `/var/
 root root
 ```
 
-### 注意
+## 注意
 
 1. 该命令是`GNU coreutils`包中的命令，相关的帮助信息请查看`man -s 1 users`，`info coreutils 'users invocation'`。
 

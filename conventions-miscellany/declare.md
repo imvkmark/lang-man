@@ -203,7 +203,7 @@ declare -F func_a func_b
    有多种原因导致`declare`失败，关于这些情况可以参考[bash在线文档declare部分\(最新版\)](https://www.gnu.org/software/bash/manual/bash.html#index-declare)，或执行 `info bash`
    查看`declare`部分最后一大串`an attempt is`开头的句子。
    
-### 注意
+## 注意
 
 1. 该命令是bash内建命令，相关的帮助信息请查看`help`命令。
 2. 导出属性的相关介绍请查看'export'命令。

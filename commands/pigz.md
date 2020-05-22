@@ -3,11 +3,10 @@ pigz
 
 可以用来解压缩文件，gzip的并行实现升级版
 
-## 补充说明
 
 **pigz命令**可以用来解压缩文件，最重要的是支持多线程并行处理，解压缩比gzip快。主页: [http://zlib.net/pigz/](http://zlib.net/pigz/)
 
-### 语法
+## 语法
 
 ```
 pigz [ -cdfhikKlLmMnNqrRtz0..9,11 ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]

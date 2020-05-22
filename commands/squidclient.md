@@ -3,17 +3,16 @@ squidclient
 
 squid服务器的客户端管理工具
 
-## 补充说明
 
 **squidclient命令** 使用squid服务器的客户端管理工具，它可以查看squid服务器的详细运行信息和管理squid服务器。
 
-###  语法
+##  语法
 
 ```
 squidclient(选项)(参数)
 ```
 
-###  选项
+##  选项
 
 ```
 -a：不包含“accept:header”；
@@ -26,7 +25,7 @@ squidclient(选项)(参数)
 -u：代理认证用户名。
 ```
 
-###  参数
+##  参数
 
 URL：指定操作缓存中的URL。
 

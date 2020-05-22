@@ -70,7 +70,7 @@ ARG（可选）：作为输入行的字符串，可以为任意数量。
 ```
 
 
-### 注意
+## 注意
 
 1. 该命令是`GNU coreutils`包中的命令，更多详细的帮助信息请查看`man -s 1 shuf`，`info coreutils 'shuf invocation'`。
 

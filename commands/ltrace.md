@@ -3,17 +3,16 @@ ltrace
 
 用来跟踪进程调用库函数的情况
 
-## 补充说明
 
 **ltrace命令** 是用来跟踪进程调用库函数的情况。
 
-###  语法
+##  语法
 
 ```
 ltrace [option ...] [command [arg ...]]
 ```
 
-###  选项
+##  选项
 
 ```
 -a 对齐具体某个列的返回值。
@@ -39,7 +38,7 @@ ltrace [option ...] [command [arg ...]]
 -x NAME treat the global NAME like a library subroutine.（求翻译）
 ```
 
-###  实例
+##  实例
 
 最基本应用，不带任何参数：
 

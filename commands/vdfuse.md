@@ -3,7 +3,6 @@ vdfuse
 
 VirtualBox软件挂载VDI分区文件工具
 
-## 补充说明
 
 **vdfuse命令** 是VirtualBox软件挂载VDI分区文件的一个工具，VirtualBox是一款能创建虚拟机的开源软件，vdi是它的默认磁盘格式。
 
@@ -17,13 +16,13 @@ VirtualBox是一款功能强大的x86虚拟机软件，它不仅具有丰富的�
 sudo apt-get install virtualbox-fuse
 ```
 
-###  语法
+##  语法
 
 ```
 vdfuse [options] -f image-file mountpoint
 ```
 
-###  选项
+##  选项
 
 ```
 -h 帮助
@@ -39,7 +38,7 @@ vdfuse [options] -f image-file mountpoint
 
 注意：必须编辑一下`/etc/fuse.confand`，去掉 "user_allow_other" 前面的注释符号（#），否则不能正确运行。
 
-###  实例
+##  实例
 
 使用如下如下语句挂载.vdi文件：
 

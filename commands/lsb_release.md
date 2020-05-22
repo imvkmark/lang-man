@@ -3,7 +3,6 @@ lsb_release
 
 显示发行版本信息
 
-## 补充说明
 
 LSB是Linux Standard Base的缩写， **lsb_release命令** 用来显示LSB和特定版本的相关信息。如果使用该命令时不带参数，则默认加上-v参数。
 

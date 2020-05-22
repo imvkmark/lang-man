@@ -3,17 +3,16 @@ iptstate
 
 显示iptables的工作状态
 
-## 补充说明
 
 **iptstate命令** 以top指令类似的风格时显示Linux内核中iptables的工作状态。
 
-###  语法
+##  语法
 
 ```
 iptstate(选项)
 ```
 
-###  选项
+##  选项
 
 ```
 -b：指定输出信息的排序规则；

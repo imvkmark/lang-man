@@ -41,7 +41,7 @@ kill -s SIGCONT PID
 # 此时之前的终端结束挂起状态，可以正常交互。
 ```
 
-### 注意
+## 注意
 
 1. `bash`的作业控制命令包括`bg fg kill wait disown suspend`。
 2. 该命令需要`set`选项`monitor`处于开启状态时才能执行；查看作业控制状态：输入`set -o`查看`monitor`行；执行`set -o monitor`或`set -m`开启该选项。

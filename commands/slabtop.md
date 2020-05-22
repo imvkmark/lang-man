@@ -3,17 +3,16 @@ slabtop
 
 实时显示内核slab内存缓存信息
 
-## 补充说明
 
 **slabtop命令** 以实时的方式显示内核“slab”缓冲区的细节信息。
 
-###  语法
+##  语法
 
 ```
 slabtop(选项)
 ```
 
-###  选项
+##  选项
 
 ```
 --delay=n, -d n：每n秒更新一次显示的信息，默认是每3秒；
@@ -44,7 +43,7 @@ Linux 所使用的 slab 分配器的基础是 Jeff Bonwick 为 SunOS 操作系�
 
 保存着监视系统中所有活动的 slab 缓存的信息的文件为/proc/slabinfo。
 
-###  实例
+##  实例
 
 ```
 slabtop

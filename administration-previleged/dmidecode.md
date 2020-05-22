@@ -3,7 +3,6 @@ dmidecode
 
 在Linux系统下获取有关硬件方面的信息
 
-## 补充说明
 
 **dmidecode命令** 可以让你在Linux系统下获取有关硬件方面的信息。dmidecode的作用是将DMI数据库中的信息解码，以可读的文本方式显示。由于DMI信息可以人为修改，因此里面的信息不一定是系统准确的信息。dmidecode遵循SMBIOS/DMI标准，其输出的信息包括BIOS、系统、主板、处理器、内存、缓存等等。
 
@@ -11,13 +10,13 @@ DMI（Desktop Management Interface,DMI）就是帮助收集电脑系统信息的
 
 DMI充当了管理工具和系统层之间接口的角色。它建立了标准的可管理系统更加方便了电脑厂商和用户对系统的了解。DMI的主要组成部分是Management Information Format(MIF)数据库。这个数据库包括了所有有关电脑系统和配件的信息。通过DMI，用户可以获取序列号、电脑厂商、串口信息以及其它系统配件信息。
 
-###  语法 
+##  语法 
 
 ```
 dmidecode [选项]
 ```
 
-###  选项 
+##  选项 
 
 ```
 -d：(default:/dev/mem)从设备文件读取信息，输出内容与不加参数标准输出相同。
@@ -114,7 +113,7 @@ dmidecode [选项]
 *   Additional Information
 *   Onboard Device
 
-###  实例 
+##  实例 
 
 ```
 dmidecode -t 1  # 查看服务器信息

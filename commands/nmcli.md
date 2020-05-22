@@ -3,17 +3,16 @@ nmcli
 
 地址配置工具
 
-## 补充说明
 
 **nmcli命令** 是 NetworkManager client 网络管理客户端。
 
-###  语法
+##  语法
 
 ```
 nmcli [OPTIONS] OBJECT { COMMAND | help }
 ```
 
-###  选项
+##  选项
 
 ```
 OPTIONS
@@ -37,7 +36,7 @@ OBJECT
   a[gent]         NetworkManager秘密代理或polkit代理
 ```
 
-###  实例
+##  实例
 
 ```
 nmcli connection show           # 查看当前连接状态

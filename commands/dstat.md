@@ -3,7 +3,6 @@ dstat
 
 通用的系统资源统计工具
 
-## 补充说明
 
 **dstat命令** 是一个用来替换vmstat、iostat、netstat、nfsstat和ifstat这些命令的工具，是一个全能系统信息统计工具。与sysstat相比，dstat拥有一个彩色的界面，在手动观察性能状况时，数据比较显眼容易观察；而且dstat支持即时刷新，譬如输入`dstat 3`即每三秒收集一次，但最新的数据都会每秒刷新显示。和sysstat相同的是，dstat也可以收集指定的性能资源，譬如`dstat -c`即显示CPU的使用情况。
 
@@ -49,7 +48,7 @@ usr sys idl wai hiq siq| read  writ| recv  send|  in   out | int   csw
 
 其他的都很好理解。
 
-###  语法
+##  语法
 
 ```
 dstat [-afv] [options..] [delay [count]]
@@ -81,7 +80,7 @@ dstat [-afv] [options..] [delay [count]]
 
 当然dstat还有很多更高级的用法，常用的基本这些选项，更高级的用法可以结合man文档。
 
-###  实例
+##  实例
 
 如想监控swap，process，sockets，filesystem并显示监控的时间：
 

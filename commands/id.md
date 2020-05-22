@@ -86,7 +86,7 @@ uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10
 uid=500(www) gid=500(www) groups=500(www)
 ```
 
-### 注意
+## 注意
 
 1. 该命令可以显示真实有效的用户ID(UID)和组ID(GID)。UID 是对一个用户的单一身份标识。组ID（GID）则对应多个UID；一些程序可能需要UID/GID来运行。`id` 使我们更加容易地找出用户的UID以及GID，而不必在 `/etc/group` 文件中搜寻。
 

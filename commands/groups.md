@@ -37,7 +37,7 @@ username（可选）：可以是一到多个，不提供时默认为当前用户
 linux : linux adm dialout cdrom plugdev lpadmin admin sambashare
 ```
 
-### 注意
+## 注意
 
 1. 该命令等价于 `id -Gn`。
 2. 每个用户属于`/etc/passwd`中指定的一个组和在`/etc/group`中指定的其他组。

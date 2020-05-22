@@ -203,7 +203,7 @@ guge 50 3000
 对员工工资进行排序，我们也使用了`-k 3,3`，这是最准确的表述，表示我们只对本域进行排序，因为如果你省略了后面的3，就变成了我们对第3个域开始到最后一个域位置的内容进行排序了。
 
 
-### 注意
+## 注意
 
 1. [关于-g和-n选项的区别：stackoverflow](https://stackoverflow.com/questions/1255782/whats-the-difference-between-general-numeric-sort-and-numeric-sort-options)
 

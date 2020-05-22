@@ -31,7 +31,7 @@ logname [OPTION]...
 root
 ```
 
-### 注意
+## 注意
 
 1. 注意区分 `whoami` 和 `logname` 这两个命令；比如我们以用户 `root` 打开的终端，然后切换到了用户 `user2`。此时， `whoami`返回的是当前用户 `user2`, `logname` 返回的是 `root`，大家可以自行实践验证一下。
 

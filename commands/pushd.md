@@ -64,7 +64,7 @@ dir（可选）：要推送的目录。
 ~ ~/Desktop ~/Pictures
 ```
 
-### 注意
+## 注意
 
 1. `bash`的目录堆栈命令包括`dirs popd pushd`。
 2. 当前目录始终是目录堆栈的顶部。

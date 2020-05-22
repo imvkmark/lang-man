@@ -3,17 +3,16 @@ dhcrelay
 
 使用dhcrelay命令可以提供中继DHCP和BOOTP请求
 
-## 补充说明
 
 **dhcrelay命令** 使用dhcrelay命令可以提供中继DHCP和BOOTP请求，从一个没有DHCP服务器的子网直接连接到其它子网内的一个或多个DHCP服务器。该命令在DHCP中继服务器上使用，同时支持DHCPv4/BOOTP和DHCPv6协议。
 
-###  语法
+##  语法
 
 ```
 dhcrelay [选项] [DHCP服务器]
 ```
 
-###  选项
+##  选项
 
 ```
 -c <跳数> 当转发数据包时，dhcrelay丢弃已经达到一个最大跳数的数据包。默认值是10，最大值是255
@@ -25,7 +24,7 @@ dhcrelay [选项] [DHCP服务器]
 -d 强制dhcrelay命令作为前台进程运行
 ```
 
-### 例子
+## 例子
 
 指定DHCP服务器的位置。
 

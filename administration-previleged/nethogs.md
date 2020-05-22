@@ -3,7 +3,6 @@ nethogs
 
 终端下的网络流量监控工具
 
-## 补充说明
 
 有很多适用于Linux系统的开源网络监视工具。比如说，你可以用命令iftop来检查带宽使用情况。netstat用来查看接口统计报告，还有top监控系统当前运行进程。但是如果你想要找一个能够按进程实时统计网络带宽利用率的工具，那么NetHogs值得一看。
 
@@ -16,12 +15,12 @@ nethogs
 本文为你介绍如何在Unix/Linux操作系统下如何安装和使用NetHogs按进程监控网络带宽使用率。
 
 
-###  语法 
+##  语法 
 
 ```
 nethogs（选项）（参数）
 ```
-###  选项 
+##  选项 
 
 ```
 usage: nethogs [-V] [-h] [-b] [-d seconds] [-v mode] [-c count] [-t] [-p] [-s] [device [device [device ...]]]

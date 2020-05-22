@@ -3,7 +3,6 @@ firewall-cmd
 
 Linux上新用的防火墙软件，跟iptables差不多的工具
 
-## 补充说明
 
 firewall-cmd 是 firewalld的字符界面管理工具，firewalld是centos7的一大特性，最大的好处有两个：支持动态更新，不用重启服务；第二个就是加入了防火墙的“zone”概念。
 
@@ -20,7 +19,7 @@ firewalld自身并不具备防火墙的功能，而是和iptables一样需要通
 firewall-cmd [选项 ... ]
 ```
 
-### 选项
+## 选项
 
 通用选项
 
@@ -47,7 +46,7 @@ firewall-cmd [选项 ... ]
 --set-log-denied=<value> # 设置记录被拒绝的日志，只能为 'all','unicast','broadcast','multicast','off' 其中的一个；
 ```
 
-###  实例
+##  实例
 
 ```
 # 安装firewalld

@@ -3,7 +3,6 @@ git
 
 是目前世界上最先进的分布式版本控制系统
 
-## 补充说明
 
 **git命令** 很多人都知道，Linus在1991年创建了开源的Linux，从此，Linux系统不断发展，已经成为最大的服务器系统软件了。
 
@@ -27,7 +26,7 @@ Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitH
 
 [Git常用命令清单](https://github.com/jaywcjlove/handbook/blob/master/other/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95.md)
 
-###  语法
+##  语法
 
 ```
 git [--version] [--help] [-C <path>] [-c name=value]
@@ -37,7 +36,7 @@ git [--version] [--help] [-C <path>] [-c name=value]
    <command> [<args>]
 ```
 
-###  选项
+##  选项
 
 ```
 add              将文件内容添加到索引
@@ -63,7 +62,7 @@ status           显示工作树状态
 tag              创建，列出，删除或验证使用GPG签名的标签对象
 ```
 
-### 例子
+## 例子
 
 init
 

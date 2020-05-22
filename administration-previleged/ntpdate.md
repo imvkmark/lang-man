@@ -3,7 +3,6 @@ ntpdate
 
 使用网络计时协议（NTP）设置日期和时间
 
-## 补充说明
 
 **ntpdate命令** 是用来设置本地日期和时间。它从指定的每个服务器获得了一些样本，并应用标准 NTP 时钟过滤器和选择算法来选择最好的样本。
 
@@ -18,13 +17,13 @@ ntpdate
 
 你必须有 root 权限才能在主机上运行这个命令。
 
-###  语法
+##  语法
 
 ```
 ntpdate [ -b] [ -d] [ -s] [ -u] [ -aKeyid] [ -eAuthenticationDelay] [ -kKeyFile] [ -oVersion] [ -pSamples] [ -tTimeOut] Server...
 ```
 
-###  选项
+##  选项
 
 <table>
 <tbody>

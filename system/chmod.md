@@ -90,7 +90,7 @@ chmod -R a=rw ./testdir/
 chmod --reference=./1.log  ./test.log
 ```
 
-### 注意
+## 注意
 
 1. 该命令是`GNU coreutils`包中的命令，相关的帮助信息请查看`man chmod`或`info coreutils 'chmod invocation'`。
 

@@ -60,7 +60,7 @@ alias rm='rm -i'
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
 ```
 
-### 注意
+## 注意
 
 1. 该命令是bash内建命令，相关的帮助信息请查看`help`命令。
 

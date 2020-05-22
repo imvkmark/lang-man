@@ -3,7 +3,6 @@ iptables
 
 Linux上常用的防火墙软件
 
-## 补充说明
 
 **iptables命令** 是Linux上常用的防火墙软件，是netfilter项目的一部分。可以直接配置，也可以通过许多前端和图形界面配置。
 
@@ -40,13 +39,13 @@ Linux上常用的防火墙软件
 
 <!-- /TOC -->
 
-### 语法
+## 语法
 
 ```
 iptables(选项)(参数)
 ```
 
-### 选项
+## 选项
 
 ```
 -t, --table table 对指定的表 table 进行操作， table 必须是 raw， nat，filter，mangle 中的一个。如果不指定此选项，默认的是 filter 表。
