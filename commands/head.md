@@ -5,7 +5,7 @@ head
 
 ## 概要
 
-```shell
+```
 head [OPTION]... [FILE]...
 ```
 
@@ -17,7 +17,7 @@ head [OPTION]... [FILE]...
 
 ## 选项
 
-```shell
+```
 -c, --bytes=[-]NUM       显示前NUM字节；如果NUM前有"-"，那么会打印除了文件末尾的NUM字节以外的其他内容。
 -n, --lines=[-]NUM       显示前NUM行而不是默认的10行；如果NUM前有"-"，那么会打印除了文件末尾的NUM行以外的其他行。
 -q, --quiet, --silent    不打印文件名行。
@@ -52,7 +52,7 @@ FILE（可选）：要处理的文件，可以为一或多个。
 
 ## 例子
 
-```shell
+```
 # 查看历史文件的前6行：
 [user2@pc ~]$ head -n 6 ~/.bash_history
 #1575425555
@@ -63,7 +63,7 @@ ls -lh
 vi ~/Desktop/ZhuangZhu-74.txt
 ```
 
-```shell
+```
 # 查看多个文件：
 [user2@pc ~]$ head -n ~/.bash_history ~/.bashrc
 ==> /allhome/user2/.bash_history <==

@@ -5,7 +5,7 @@ fg
 
 ## 概要
 
-```shell
+```
 fg [job_spec ...]
 ```
 
@@ -25,7 +25,7 @@ job_spec（可选）：指定要移动到前台执行的作业标识符，可以
 
 ## 例子
 
-```shell
+```
 # 运行sleep命令，然后按下ctrl+z。
 sleep 60
 ^Z

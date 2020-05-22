@@ -5,7 +5,7 @@ false
 
 ## 概要
 
-```shell
+```
 false
 ```
 

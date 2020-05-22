@@ -5,7 +5,7 @@ whoami
 
 ## 概要
 
-```shell
+```
 whoami [OPTION]...
 ```
 
@@ -15,7 +15,7 @@ whoami [OPTION]...
 
 ## 选项
 
-```shell
+```
 --help       显示帮助信息并退出。
 --version    显示版本信息并退出。
 ```
@@ -26,7 +26,7 @@ whoami [OPTION]...
 
 ## 例子
 
-```shell
+```
 [root@localhost ~]# whoami
 root
 ```

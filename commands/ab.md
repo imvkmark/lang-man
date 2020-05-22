@@ -9,7 +9,7 @@ Apache服务器的性能测试工具
 
 ### 语法
 
-```shell
+```
 ab [ -A auth-username:password ] [ -c concurrency ] [ -C cookie-name=value
 ] [ -d ] [ -e csv-file ] [ -g gnuplot-file ] [ -h ] [ -H custom-header ] [
 -i  ]  [  -k  ]  [  -n  requests  ] [ -p POST-file ] [ -P proxy-auth-user‐
@@ -21,7 +21,7 @@ name[:port]/path
 
 ### 选项
 
-```shell
+```
 -A auth-username:password
       #  支持基本的验证证书,用户名和密码之间使用"冒号"                    :
       # 分隔开,ab将以明文方式传送过去.不管服务器是不是需要

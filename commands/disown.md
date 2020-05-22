@@ -5,7 +5,7 @@ disown
 
 ## 概要
 
-```shell
+```
 disown [-h] [-ar] [jobspec ... | pid ...]
 ```
 
@@ -22,7 +22,7 @@ disown [-h] [-ar] [jobspec ... | pid ...]
 
 ## 选项
 
-```shell
+```
 -h    标记每个作业标识符，这些作业将不会在shell接收到sighup信号时接收到sighup信号。
 -a    移除所有的作业。
 -r    移除运行的作业。
@@ -41,7 +41,7 @@ pid（可选）：要移除的作业对应的进程ID，可以是一到多个。
 
 ## 例子
 
-```shell
+```
 # 演示。
 [user2@pc] ssh 192.168.1.4
 user2@192.168.1.4's password:
@@ -95,7 +95,7 @@ bash: warning: deleting stopped job 1 with process group 28756
 28756 ssh 192.168.1.4
 ```
 
-```shell
+```
 # 演示-h选项的作用。
 [user2@pc] sleep 90 &
 [1] 109080

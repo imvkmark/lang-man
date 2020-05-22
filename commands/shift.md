@@ -5,7 +5,7 @@ shift
 
 ## 概要
 
-```shell
+```
 shift [n]
 ```
 
@@ -25,7 +25,7 @@ n（可选）：大于等于1且小于等于参数个数的整数，默认为1�
 
 假设我们的脚本文件（test.sh）如下：
 
-```shell
+```
 #!/usr/bin/env bash
 # 显示前三个位置参数。
 echo "$1 $2 $3"
@@ -36,13 +36,13 @@ echo "$1 $2 $3"
 
 在终端执行该脚本：
 
-```shell
+```
 sh test.sh q w e r t
 ```
 
 返回信息如下：
 
-```shell
+```
 q w e
 e r t
 ```

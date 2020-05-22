@@ -5,7 +5,7 @@ let
 
 ## 概要
 
-```shell
+```
 let arg [arg ...]
 ```
 
@@ -47,7 +47,7 @@ arg：算术表达式
 
 ## 例子
 
-```shell
+```
 # 尝试直接在终端中执行算术表达式（就像在python的IDLE）。
 3+4
 bash：3+4：command not found...
@@ -57,7 +57,7 @@ bash：3：command not found...
 # 看来不行。
 ```
 
-```shell
+```
 # let命令赋值。
 let a=3**4
 echo ${a}
@@ -66,7 +66,7 @@ echo ${a}
 ((a=3**4))
 ```
 
-```shell
+```
 # let常用于变量赋值，而外部命令expr可直接返回表达式的值。
 let 3+4
 # 没有显示7。
@@ -74,7 +74,7 @@ let 3+4
 expr 3 + 4
 ```
 
-```shell
+```
 # 条件表达式。
 if ((8>4)); then
   echo '8 is greater than 4.'
@@ -89,7 +89,7 @@ else
 fi
 ```
 
-```shell
+```
 # 可以通过declare命令设置整型属性的方法来进行算术运算。
 # local命令与此类似。
 

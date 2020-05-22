@@ -9,7 +9,7 @@ objdump
 
 ###  选项
 
-```shell
+```
 -a --archive-headers 
 # 显示档案库的成员信息,类似ls -l将lib*.a的信息列出。 
 
@@ -126,11 +126,11 @@ objdump -b oasys -m vax -h fu.o
 
 首先，在给出后面大部分测试所基于的源代码以及编译指令。 源代码如下： 
 
-```shell
+```
 root@localhost [test]# nl mytest.cpp 
 ```
 
-```shell
+```
 void printTest() {
     char a;
     a = 'a';
@@ -144,7 +144,7 @@ a+=2;
 
 对以上源代码进行编译，如下： 
 
-```shell
+```
 [root@localhost test]# g++ -c -g mytest.cpp 
 ```
 
@@ -152,7 +152,7 @@ a+=2;
 
  **查看当前使用的objdump的版本号： ** 
 
-```shell
+```
 [root@localhost test]# objdump -V 
 GNU objdump 2.17.50.0.6-14.el5 20061020 
 Copyright 2005 free Software Foundation, Inc. 
@@ -162,7 +162,7 @@ the GNU General Public License.  This program has absolutely no warranty.
 
  **查看档案库文件中的信息： ** 
 
-```shell
+```
 [root@localhost test]# objdump -a libmy2.a 
 In archive libmy2.a: 
 myfile.o:     file format elf32-i386 
@@ -173,7 +173,7 @@ rw-r--r-- 0/0    727 Jul 13 15:32 2011 mytest.o
 
  **这里，libmy2.a是一个使用ar命令将多个*.o目标文件打包而生成的静态库。命令的输出类似`ar -tv`，相比较`ar -tv`输出如下： ** 
 
-```shell
+```
 [root@localhost test]# ar -tv libmy2.a 
 rwxrwxrwx 0/0   2724 Nov 16 16:06 2009 myfile.o 
 rw-r--r-- 0/0    727 Jul 13 15:32 2011 mytest.o 
@@ -181,7 +181,7 @@ rw-r--r-- 0/0    727 Jul 13 15:32 2011 mytest.o
 
 显示可用的架构和目标结构列表： 
 
-```shell
+```
 [root@localhost test]# objdump -i 
 BFD header file version 2.17.50.0.6-14.el5 20061020 
 elf32-i386 
@@ -240,7 +240,7 @@ trad-core
 
  **显示mytest.o文件中的text段的内容： ** 
 
-```shell
+```
 [root@localhost test]# objdump --section=.text -s mytest.o 
 mytest.o:     file format elf32-i386 
 Contents of section .text: 
@@ -252,7 +252,7 @@ Contents of section .text:
 
  **反汇编mytest.o中的text段内容，并尽可能用源代码形式表示： ** 
 
-```shell
+```
 [root@localhost test]# objdump -j .text -S mytest.o 
 mytest.o:     file format elf32-i386 
 Disassembly of section .text: 
@@ -288,7 +288,7 @@ void printTest2()
 
  **反汇编出mytest.o的源代码: ** 
 
-```shell
+```
 [root@localhost test]# objdump -S mytest.o 
 mytest.o:     file format elf32-i386 
 
@@ -326,7 +326,7 @@ void printTest2()
 
  **显示文件的符号表入口: ** 
 
-```shell
+```
 [root@localhost test]# objdump -t mytest.o 
 mytest.o:     file format elf32-i386 
 
@@ -351,7 +351,7 @@ SYMBOL TABLE:
 
 这里，输出的信息类似`nm -s`命令的输出，相比较之下，nm命令的输出如下： 
 
-```shell
+```
 [root@localhost test]# nm -s mytest.o 
 0000000c T _Z10printTest2v 
 00000000 T _Z9printTestv 
@@ -360,7 +360,7 @@ SYMBOL TABLE:
 
  **显示文件的符号表入口，将底层符号解码并表示成用户级别: ** 
 
-```shell
+```
 [root@localhost test]# objdump -t -C mytest.o 
 mytest.o:     file format elf32-i386 
 SYMBOL TABLE: 
@@ -386,7 +386,7 @@ SYMBOL TABLE:
 
  **反汇编目标文件的特定机器码段： ** 
 
-```shell
+```
 [root@localhost test]# objdump -d mytest.o 
 mytest.o:     file format elf32-i386 
 Disassembly of section .text: 
@@ -413,7 +413,7 @@ Disassembly of section .text:
 
  **反汇编特定段，并将汇编代码对应的文件名称和行号对应上： ** 
 
-```shell
+```
 [root@localhost test]# objdump -d -l mytest.o
 mytest.o:     file format elf32-i386 
 Disassembly of section .text: 
@@ -449,7 +449,7 @@ _Z10printTest2v():
 
  **显示目标文件各个段的头部摘要信息： ** 
 
-```shell
+```
 [root@localhost test]# objdump -h mytest.o 
 mytest.o:     file format elf32-i386 
 

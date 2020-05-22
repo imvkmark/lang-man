@@ -5,7 +5,7 @@ jobs
 
 ## 概要
 
-```shell
+```
 jobs [-lnprs] [jobspec ...]
 jobs -x command [args]
 ```
@@ -18,7 +18,7 @@ jobs -x command [args]
 
 ## 选项
 
-```shell
+```
 -l	在作业信息中额外的列出PID。
 -n	只列出最近一次通知以来状态变更的作业。
 -p	只列出PID。
@@ -34,7 +34,7 @@ jobs -x command [args]
 
 ## 例子
 
-```shell
+```
 [user2@pc] ssh 192.168.1.4
 pc@192.168.1.4's password:
 # 此时按下ctrl+z使得交互停止。

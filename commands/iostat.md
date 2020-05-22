@@ -9,13 +9,13 @@ iostat
 
 ###  语法
 
-```shell
+```
 iostat(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -c：仅显示CPU使用情况；
 -d：仅显示设备利用率；
 -k：显示状态以千字节每秒为单位，而不使用块每秒；
@@ -35,7 +35,7 @@ iostat(选项)(参数)
 
 用`iostat -x /dev/sda1`来观看磁盘I/O的详细情况：
 
-```shell
+```
 iostat -x /dev/sda1 
 Linux 2.6.18-164.el5xen (localhost.localdomain)
 2010年03月26日  

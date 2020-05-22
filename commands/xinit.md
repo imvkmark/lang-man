@@ -9,7 +9,7 @@ xinit
 
 ###  语法
 
-```shell
+```
 xinit(参数)
 ```
 

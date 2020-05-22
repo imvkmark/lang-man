@@ -5,7 +5,7 @@ suspend
 
 ## 概要
 
-```shell
+```
 suspend [-f]
 ```
 
@@ -18,7 +18,7 @@ suspend [-f]
 
 ## 选项
 
-```shell
+```
 -f    对login shell执行挂起操作。
 ```
 
@@ -28,14 +28,14 @@ suspend [-f]
 
 ## 例子
 
-```shell
+```
 # 打开一个终端，首先获取PID。
 echo $$
 # 执行挂起命令
 suspend
 ```
 
-```shell
+```
 # 再打开一个终端，发送SIGCONT命令
 kill -s SIGCONT PID
 # 此时之前的终端结束挂起状态，可以正常交互。

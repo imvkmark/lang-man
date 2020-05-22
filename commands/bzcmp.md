@@ -9,7 +9,7 @@ bzcmp
 
 ###  语法
 
-```shell
+```
 bzcmp(参数)
 ```
 

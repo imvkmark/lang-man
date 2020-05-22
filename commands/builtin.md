@@ -5,7 +5,7 @@ builtin
 
 ## 概要
 
-```shell
+```
 builtin [shell-builtin [arg ...]]
 ```
 
@@ -30,7 +30,7 @@ arg（可选）：传递给bash内建命令的一到多个参数。
 
 builtin 内建命令 > 函数 > 内建命令 > 外部命令
 
-```shell
+```
 # 关于外部命令优先级最高的情况请参考enable命令。
 # 此时内建命令优先使用
 echo "the Great Wall"
@@ -48,7 +48,7 @@ type -t echo
 builtin echo -e "backslash \\"
 ```
 
-```shell
+```
 # 执行shell内部指令，输出当前系统下的命令别名
 builtin alias
 alias cp='cp -i'

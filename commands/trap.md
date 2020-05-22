@@ -7,7 +7,7 @@ trap
 
 **trap命令** 用于指定在接收到信号后将要采取的动作，常见的用途是在脚本程序被中断时完成清理工作。当shell接收到sigspec指定的信号时，arg参数（命令）将会被读取，并被执行。例如：
 
-```shell
+```
 trap "exit 1" HUP INT PIPE QUIT TERM
 ```
 
@@ -15,7 +15,7 @@ trap "exit 1" HUP INT PIPE QUIT TERM
 
 ###  语法
 
-```shell
+```
 trap -[lp] [[arg] sigspec ...]
 ```
 
@@ -104,7 +104,7 @@ trap -[lp] [[arg] sigspec ...]
 
 捕获这些信号是很容易的，trap命令的语法如下：
 
-```shell
+```
 $ trap commands signals
 ```
 
@@ -119,7 +119,7 @@ $ trap commands signals
 
 trap命令作为一个例子，下面展示了如何可以删除一些文件，然后退出，如果有人试图从终端中止程序：
 
-```shell
+```
 trap "rm -f $WORKDIR/work1$ $WORKDIR/dataout$; exit" 2
 ```
 
@@ -131,7 +131,7 @@ trap "rm -f $WORKDIR/work1$ $WORKDIR/dataout$; exit" 2
 
 您可以修改前面的陷阱也删除指定的文件，在这种情况下，两个信号信号1号添加到列表：
 
-```shell
+```
 $ trap "rm $WORKDIR/work1$ $WORKDIR/dataout$; exit" 1 2
 ```
 
@@ -141,7 +141,7 @@ $ trap "rm $WORKDIR/work1$ $WORKDIR/dataout$; exit" 1 2
 
 WORKDIR 值 $$ 所以在前面的例子中，将被取代 trap 命令执行的时间。如果你想这种替代发生在收到信号1或2的时间你可以把单引号内的命令：
 
-```shell
+```
 $ trap 'rm $WORKDIR/work1$ $WORKDIR/dataout$; exit' 1 2
 ```
 
@@ -149,19 +149,19 @@ $ trap 'rm $WORKDIR/work1$ $WORKDIR/dataout$; exit' 1 2
 
 如果陷阱列出的命令是空的，指定的信号接收时，将被忽略。例如，下面的命令：
 
-```shell
+```
 $ trap '' 2
 ```
 
 指定的中断信号是被忽略的。你可能要忽略某些信号时进行一些操作，不希望打断。可以指定多个信号被忽略如下：
 
-```shell
+```
 $ trap '' 1 2 3 15
 ```
 
 注意，第一个参数必须被指定为一个信号被忽略，而不是相当于写入下面的内容，它具有独立的含义也各有：
 
-```shell
+```
 $ trap  2
 ```
 
@@ -171,7 +171,7 @@ $ trap  2
 
 当你改变了默认在收到信号后应采取的动作，你可以改变它回来的陷阱，如果你只是省略第一个参数;
 
-```shell
+```
 $ trap 1 2
 ```
 

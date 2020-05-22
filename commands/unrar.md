@@ -5,14 +5,14 @@ unrar
 
 ###  语法
 
-```shell
+```
 unrar [选项][switch 命令] [文件名...][路径]
    unrar <command> [-<switch 1> -<switch N>] archive [files...] [path...]
 ```
 
 ###  选项
 
-```shell
+```
        - e  #将文件解压缩到当前目录。
        -l    # 列出存档内容。
        -p   #将文件打印到标准输出。
@@ -23,7 +23,7 @@ unrar [选项][switch 命令] [文件名...][路径]
 
 ### SWITCHES  开关设置
 
-```shell
+```
        注意：每个开关必须用空格分隔。你不能把它们放在一起。
        -av-      #禁用真实性验证检查。
 	-c-         #禁用评论显示
@@ -53,13 +53,13 @@ unrar [选项][switch 命令] [文件名...][路径]
 
 将压缩文件text.rar在当前目录下解压缩,并解压完整路径。
 
-```shell
+```
 unrar x test.rar
 ```
 
 ### AUTHOR
 
-```shell
+```
        This  manual  page  was  written by Petr Cech <cech@debian.org> according to "unrar -h"for the Debian
        GNU/Linux system (but may be used by others).
 ```

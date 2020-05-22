@@ -5,7 +5,7 @@ nproc
 
 ## 概要
 
-```shell
+```
 nproc [OPTION]...
 ```
 
@@ -15,7 +15,7 @@ nproc [OPTION]...
 
 ## 选项
 
-```shell
+```
 --all         打印已安装处理器的数量。
 --ignore=N    如果可以的情况下，排除 N 个处理单元。
 --help        显示帮助信息并退出。
@@ -24,7 +24,7 @@ nproc [OPTION]...
 
 ## 例子
 
-```shell
+```
 [root@localhost ~]# nproc
 8
 ```

@@ -9,13 +9,13 @@ uptime
 
 ###  语法
 
-```shell
+```
 uptime(选项)
 ```
 
 ###  选项
 
-```shell
+```
 -V：显示指令的版本信息。
 ```
 
@@ -23,7 +23,7 @@ uptime(选项)
 
 使用uptime命令查看系统负载：
 
-```shell
+```
 [root@LinServ-1 ~]# uptime -V    #显示uptime命令版本信息
 procps version 3.2.7
 
@@ -33,7 +33,7 @@ procps version 3.2.7
 
  **显示内容说明：** 
 
-```shell
+```
 15:31:30             # 系统当前时间
 up 127 days,  3:00   # 主机已运行时间,时间越大，说明你的机器越稳定。
 1 user               # 用户连接数，是总连接数而不是用户数

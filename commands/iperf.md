@@ -15,7 +15,7 @@ Linux版本下载地址：http://code.google.com/p/iperf/downloads/list
 
 对于windows版的iperf，直接将解压出来的iperf.exe和cygwin1.dll复制到%systemroot%目录即可，对于linux版的iperf，请使用如下命令安装：
 
-```shell
+```
 gunzip -c iperf-<version>.tar.gz | tar -xvf -
 cd iperf-<version>
 ./configure
@@ -197,25 +197,25 @@ $ iperf -c <server address> -F <file-name></td>
 
 服务器端：
 
-```shell
+```
 iperf -u -s
 ```
 
 客户端：
 
-```shell
+```
 iperf -u -c 192.168.1.1 -b 100M -t 60
 ```
 
 在udp模式下，以100Mbps为数据发送速率，客户端到服务器192.168.1.1上传带宽测试，测试时间为60秒。
 
-```shell
+```
 iperf -u -c 192.168.1.1 -b 5M -P 30 -t 60
 ```
 
 客户端同时向服务器端发起30个连接线程，以5Mbps为数据发送速率。
 
-```shell
+```
 iperf -u -c 192.168.1.1 -b 100M -d -t 60
 ```
 
@@ -225,25 +225,25 @@ iperf -u -c 192.168.1.1 -b 100M -d -t 60
 
 服务器端：
 
-```shell
+```
 iperf -s
 ```
 
 客户端：
 
-```shell
+```
 iperf -c 192.168.1.1 -t 60
 ```
 
 在tcp模式下，客户端到服务器192.168.1.1上传带宽测试，测试时间为60秒。
 
-```shell
+```
 iperf -c 192.168.1.1  -P 30 -t 60
 ```
 
 客户端同时向服务器端发起30个连接线程。
 
-```shell
+```
 iperf -c 192.168.1.1  -d -t 60
 ```
 

@@ -5,7 +5,7 @@ logname
 
 ## 概要
 
-```shell
+```
 logname [OPTION]...
 ```
 
@@ -15,7 +15,7 @@ logname [OPTION]...
 
 ## 选项
 
-```shell
+```
 --help       显示帮助信息并退出。
 --version    显示版本信息并退出。
 ```
@@ -26,7 +26,7 @@ logname [OPTION]...
 
 ## 例子
 
-```shell
+```
 [root@localhost ~]# logname
 root
 ```

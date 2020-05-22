@@ -9,13 +9,13 @@ gdb
 
 ### 语法
 
-```shell
+```
 gdb(选项)(参数)
 ```
 
 ### 选项
 
-```shell
+```
 -cd：设置工作目录；
 -q：安静模式，不打印介绍信息和版本信息；
 -d：添加文件查找路径；
@@ -46,7 +46,7 @@ help [命令名称] | GDB帮助命令，提供对GDB名种命令的解释说明�
 
 以下是linux下dgb调试的一个实例，先给出一个示例用的小程序，C语言代码：
 
-```shell
+```
 #include <stdio.h>
 int nGlobalVar = 0;
 
@@ -77,7 +77,7 @@ int main()
 
 请将此代码复制出来并保存到文件 gdb-sample.c 中，然后切换到此文件所在目录，用GCC编译之：
 
-```shell
+```
 gcc gdb-sample.c -o gdb-sample -g
 ```
 
@@ -85,7 +85,7 @@ gcc gdb-sample.c -o gdb-sample -g
 
 下面“gdb”命令启动GDB，将首先显示GDB说明，不管它：
 
-```shell
+```
 GNU gdb Red Hat Linux (5.3post-0.20021129.18rh)
 Copyright 2003 free Software Foundation, Inc.
 GDB is free software, covered by the GNU General Public License, and you are
@@ -100,7 +100,7 @@ This GDB was configured as "i386-redhat-linux-gnu".
 
 下面使用“file”命令载入被调试程序 gdb-sample（这里的 gdb-sample 即前面 GCC 编译输出的可执行文件）：
 
-```shell
+```
 (gdb) file gdb-sample
 Reading symbols from gdb-sample...done.
 ```
@@ -109,7 +109,7 @@ Reading symbols from gdb-sample...done.
 
 下面使用“r”命令执行（Run）被调试文件，因为尚未设置任何断点，将直接执行到程序结束：
 
-```shell
+```
 (gdb) r
 Starting program: /home/liigo/temp/test_jmp/test_jmp/gdb-sample
 n = 1, nGlobalVar = 88
@@ -120,7 +120,7 @@ Program exited normally.
 
 下面使用“b”命令在 main 函数开头设置一个断点（Breakpoint）：
 
-```shell
+```
 (gdb) b main
 Breakpoint 1 at 0x804835c: file gdb-sample.c, line 19.
 ```
@@ -129,7 +129,7 @@ Breakpoint 1 at 0x804835c: file gdb-sample.c, line 19.
 
 再次使用“r”命令执行（Run）被调试程序：
 
-```shell
+```
 (gdb) r
 Starting program: /home/liigo/temp/gdb-sample
 
@@ -143,7 +143,7 @@ Breakpoint 1, main () at gdb-sample.c:19
 
 下面使用“s”命令（Step）执行下一行代码（即第19行“n = 1;”）：
 
-```shell
+```
 (gdb) s
 20 n++;
 ```
@@ -152,7 +152,7 @@ Breakpoint 1, main () at gdb-sample.c:19
 
 既然已经执行了“n = 1;”，即给变量 n 赋值为 1，那我们用“p”命令（Print）看一下变量 n 的值是不是 1 ：
 
-```shell
+```
 (gdb) p n
 $1 = 1
 ```
@@ -161,7 +161,7 @@ $1 = 1
 
 下面我们分别在第26行、tempFunction 函数开头各设置一个断点（分别使用命令“b 26”“b tempFunction”）：
 
-```shell
+```
 (gdb) b 26
 Breakpoint 2 at 0x804837b: file gdb-sample.c, line 26.
 (gdb) b tempFunction
@@ -170,7 +170,7 @@ Breakpoint 3 at 0x804832e: file gdb-sample.c, line 12.
 
 使用“c”命令继续（Continue）执行被调试程序，程序将中断在第二 个断点（26行），此时全局变量 nGlobalVar 的值应该是 88；再一次执行“c”命令，程序将中断于第三个断点（12行，tempFunction 函数开头处），此时tempFunction 函数的两个参数 a、b 的值应分别是 1 和 2：
 
-```shell
+```
 (gdb) c
 Continuing.
 
@@ -194,7 +194,7 @@ $4 = 2
 
 再一次执行“c”命令（Continue），因为后面再也没有其它断点，程序将一直执行到结束：
 
-```shell
+```
 (gdb) c
 Continuing.
 tempFunction is called, a = 1, b = 2
@@ -206,14 +206,14 @@ Program exited normally.
 
 这就要用到display命令“display /i $pc”了（此命令前面已有详细解释）：
 
-```shell
+```
 (gdb) display /i $pc
 (gdb)
 ```
 
 此后程序再中断时，就可以显示出汇编代码了：
 
-```shell
+```
 (gdb) r
 Starting program: /home/liigo/temp/test_jmp/test_jmp/gdb-sample
 
@@ -226,7 +226,7 @@ Breakpoint 1, main () at gdb-sample.c:19
 
 并且以后程序每次中断都将显示下一条汇编指定（“si”命令用于执行一条汇编代码——区别于“s”执行一行C代码）：
 
-```shell
+```
 (gdb) si
 20 n++;
 1: x/i $pc 0x8048363 <main+23>: lea 0xfffffffc(%ebp),%eax
@@ -248,7 +248,7 @@ Breakpoint 1, main () at gdb-sample.c:19
 
 为了更简明，有必要先删除目前所有断点（使用“d”命令——Delete breakpoint）：
 
-```shell
+```
 (gdb) d
 Delete all breakpoints? (y or n) y
 (gdb)
@@ -258,7 +258,7 @@ Delete all breakpoints? (y or n) y
 
 下面使用命令“b *main”在 main 函数的 prolog 代码处设置断点（prolog、epilog，分别表示编译器在每个函数的开头和结尾自行插入的代码）：
 
-```shell
+```
 (gdb) b *main
 Breakpoint 4 at 0x804834c: file gdb-sample.c, line 17.
 (gdb) r
@@ -292,7 +292,7 @@ Breakpoint 4, main () at gdb-sample.c:17
 
 此时可以使用“i r”命令显示寄存器中的当前值———“i r”即“Infomation Register”：
 
-```shell
+```
 (gdb) i r
 eax 0xbffff6a4 -1073744220
 ecx 0x42015554 1107383636
@@ -314,14 +314,14 @@ gs 0x33 51
 
 当然也可以显示任意一个指定的寄存器值：
 
-```shell
+```
 (gdb) i r eax
 eax 0xbffff6a4 -1073744220
 ```
 
 最后一个要介绍的命令是“q”，退出（Quit）GDB调试环境：
 
-```shell
+```
 (gdb) q
 The program is running. exit anyway? (y or n)
 ```
@@ -332,7 +332,7 @@ The program is running. exit anyway? (y or n)
 
 如果删除源代码, 就无法显示行号等辅助信息了
 
-```shell
+```
 gcc -g gdb.c -o gdb.out # -g 支持gdb调试; -o 输出, 默认为 a.out
 
 gdb gdb.out # 进入 gdb 调试环境

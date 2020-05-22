@@ -18,7 +18,7 @@ inotifywait
 
 使用`ll /proc/sys/fs/inotify`命令，是否有以下三条信息输出，如果没有表示不支持。
 
-```shell
+```
 ll /proc/sys/fs/inotify
 total 0
 -rw-r--r-- 1 root root 0 Jan  4 15:41 max_queued_events
@@ -31,7 +31,7 @@ total 0
 *   inotify-tools项目地址：https://github.com/rvoicilas/inotify-tools
 *   inotify-tools下载地址：http://github.com/downloads/rvoicilas/inotify-tools/inotify-tools-3.14.tar.gz
 
-```shell
+```
 #CentOS release 5.8/64位：
 tar zxvf inotify-tools-3.14.tar.gz
 cd inotify-tools-3.14
@@ -52,18 +52,18 @@ inotify定义了下列的接口参数，可以用来限制inotify消耗kernel me
 
 根据以上在32位或者64位系统都可以执行：
 
-```shell
+```
 echo 104857600 > /proc/sys/fs/inotify/max_user_watches
 echo 'echo 104857600 > /proc/sys/fs/inotify/max_user_watches' >> /etc/rc.local
 ```
 
 如果遇到以下错误：
 
-```shell
+```
 inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot open shared object file: No such file or directory 
 ```
 
-```shell
+```
  **解决方法：** 
 32位系统：ln -s /usr/local/lib/libinotifytools.so.0 /usr/lib/libinotifytools.so.0
 64位系统：ln -s /usr/local/lib/libinotifytools.so.0 /usr/lib64/libinotifytools.so.0
@@ -71,7 +71,7 @@ inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot 
 
 ###  inotifywait命令使用
 
-```shell
+```
 #!/bin/bash
 #filename watchdir.sh
 path=$1

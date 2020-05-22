@@ -5,7 +5,7 @@ shuf
 
 ## 概要
 
-```shell
+```
 shuf [OPTION]... [FILE]
 shuf -e [OPTION]... [ARG]...
 shuf -i LO-HI [OPTION]...
@@ -18,7 +18,7 @@ shuf -i LO-HI [OPTION]...
 
 ## 选项
 
-```shell
+```
 -e, --echo                  将每个ARG视为输入行。
 -i, --input-range=LO-HI     将数字范围LO（最低）到HI（最高）之间的作为输入行。
 -n, --head-count=COUNT      只输出前COUNT行。
@@ -42,7 +42,7 @@ ARG（可选）：作为输入行的字符串，可以为任意数量。
 
 ## 例子
 
-```shell
+```
 # 模拟硬币抛掷，获取前10个结果：
 [user2@pc ~]$ head -r -n 10 -e "正面" -e "反面"
 反面
@@ -57,7 +57,7 @@ ARG（可选）：作为输入行的字符串，可以为任意数量。
 正面
 ```
 
-```shell
+```
 # 体彩超级大乐透：
 [user2@pc ~]$ shuf -i 1-35 -n 5|sort -n && shuf -i 1-12 -n 2|sort -n
 4

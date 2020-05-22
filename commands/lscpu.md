@@ -9,13 +9,13 @@ lscpu
 
 ###  语法
 
-```shell
+```
 lscpu [选项]
 ```
 
 ###  选项
 
-```shell
+```
  -a, --all               # 打印在线和离线CPU（默认为-e）
  -b, --online            # 仅打印在线CPU（-p的默认值）
  -c, --offline           # 打印离线CPU
@@ -30,7 +30,7 @@ lscpu [选项]
 
 ###  参数
 
-```shell
+```
 可用列：
            CPU  逻辑CPU编号
           CORE  逻辑核心号码
@@ -46,7 +46,7 @@ lscpu [选项]
 
 ### 例子
 
-```shell
+```
 [root@localhost ~]# lscpu
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit

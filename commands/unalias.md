@@ -5,7 +5,7 @@ unalias
 
 ## 概要
 
-```shell
+```
 unalias [-a] name [name ...]
 ```
 
@@ -16,7 +16,7 @@ unalias [-a] name [name ...]
 
 ## 选项
 
-```shell
+```
 -a：删除全部已定义的别名。
 ```
 
@@ -30,7 +30,7 @@ unalias返回true除非您要删除的别名未定义。
 
 ## 例子
 
-```shell
+```
 # 删除全部已定义的别名
 unalias -a
 

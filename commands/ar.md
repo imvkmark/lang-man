@@ -9,7 +9,7 @@ ar
 
 ###  语法
 
-```shell
+```
 ar [-]{dmpqrtx}[abcfilNoPsSuvV] [membername] [count] archive files...
 Usage: ar [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [--plugin <name>] [member-name] [count] archive-file file...
        ar -M [<mri-脚本]
@@ -17,7 +17,7 @@ Usage: ar [emulation options] [-]{dmpqrstx}[abcDfilMNoPsSTuvV] [--plugin <name>]
 
 ###  选项
 
-```shell
+```
 ar 允许你 在第一个 命令行 参数中 以任意 顺序 混合 指定 操作码p 和修饰符mod .
 
 只要你 愿意, 也可以 用破折号 作为 命令行 第一个 参数的 开始.
@@ -106,7 +106,7 @@ V      显示 ar 的版本号。
 
 选项参数 
 
-```shell
+```
 --plugin <p> - load the specified plugin
 ```
 
@@ -116,7 +116,7 @@ ar：支持的目标： elf64-x86-64 elf32-i386 elf32-x86-64 a.out-i386-linux pe
 
 打包文件
 
-```shell
+```
 [root@localhost ~]# ls   # 显示当前目录文件   
 a.c	b.c d.c   install.log	  qte
 anaconda-ks.cfg c.c Desktop 
@@ -129,7 +129,7 @@ a - b.c
 
 打包多个文件
 
-```shell
+```
 [root@localhost ~]# ar rv two.bak *.c  // 打包以.c结尾的文件  
 ar: 正在创建 two.bak
 a - a.c
@@ -140,7 +140,7 @@ a - d.c
 
 显示打包文件的内容
 
-```shell
+```
 [root@localhost ~]# ar t two.bak    
 a.c
 b.c
@@ -150,7 +150,7 @@ d.c
 
 删除打包文件的成员文件
 
-```shell
+```
 [root@localhost ~]# ar d two.bak a.c b.c c.c  
 [root@localhost ~]# ar t two.bak       
 d.c

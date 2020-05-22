@@ -19,7 +19,7 @@ bzip2 和 bunzip2 在缺省情况下不覆盖已有的文件。 如果想覆盖�
 
 bunzip2 (以及 bzip2 -d) 对所有指定的文件进行解压缩处理。不是由 bzip2 产生的文件将被忽略，同时发出一个警告信息。 bzip2 按下列方式由压缩文件名确定解压后的文件名：
 
-```shell
+```
 filename.bz2    解压成   filename
 filename.bz     解压成   filename
 filename.tbz2   解压成   filename.tar
@@ -37,13 +37,13 @@ bzip2 采用 32 位 CRC 校验码作自我检查，以确认解压后的文件�
 
 ###  语法
 
-```shell
+```
 bzip2 [ -cdfkqstvzVL123456789 ] [ filenames ...  ]
 ```
 
 ###  选项
 
-```shell
+```
 -c --stdout
     # 将数据压缩或解压缩至标准输出。
 
@@ -96,7 +96,7 @@ bzip2 [ -cdfkqstvzVL123456789 ] [ filenames ...  ]
 
 **压缩指定文件filename:** 
 
-```shell
+```
 bzip2 filename
 或
 bzip2 -z filename
@@ -106,7 +106,7 @@ bzip2 -z filename
 
 **解压指定的文件filename.bz2:** 
 
-```shell
+```
 bzip2 -d filename.bz2
 或
 bunzip2 filename.bz2
@@ -116,13 +116,13 @@ bunzip2 filename.bz2
 
 **压缩解压的时候将结果也输出：** 
 
-```shell
+```
 $bzip2 -v filename
 ```
 
 输入之后，输出如下：
 
-```shell
+```
 filename:  0.119:1, 67.200 bits/byte, -740.00% saved, 5 in, 42 out.
 ```
 
@@ -130,13 +130,13 @@ filename:  0.119:1, 67.200 bits/byte, -740.00% saved, 5 in, 42 out.
 
 **模拟解压实际并不解压：** 
 
-```shell
+```
 bzip2 -tv filename.bz2
 ```
 
 输入之后，输出如下：
 
-```shell
+```
 filename.bz2: ok
 ```
 
@@ -144,7 +144,7 @@ filename.bz2: ok
 
 **压缩解压的时候，除了生成结果文件，将原来的文件也保存:** 
 
-```shell
+```
 bzip2 -k filename
 ```
 
@@ -152,13 +152,13 @@ bzip2 -k filename
 
 **解压到标准输出：** 
 
-```shell
+```
 bzip2 -dc filename.bz2
 ```
 
 输入之后，输出如下：
 
-```shell
+```
 hahahhaahahha
 ```
 
@@ -166,7 +166,7 @@ hahahhaahahha
 
 **压缩到标准输出：** 
 
-```shell
+```
 bzip2 -c filename
 bzip2: I won't write compressed data to a terminal.
 bzip2: For help, type: `bzip2 --help'.
@@ -176,7 +176,7 @@ bzip2: For help, type: `bzip2 --help'.
 
 **使用bzip2的时候将所有后面的看作文件(即使文件名以'-'开头)：** 
 
-```shell
+```
 bzip2 -- -myfilename
 ```
 

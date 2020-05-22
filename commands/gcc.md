@@ -9,13 +9,13 @@ gcc
 
 ###  语法
 
-```shell
+```
 gcc(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -o：指定生成的输出文件；
 -E：仅执行编译预处理；
 -S：将C代码转换为汇编代码；
@@ -35,7 +35,7 @@ C源文件：指定C语言源代码文件。
 
 **无选项编译链接** 
 
-```shell
+```
 gcc test.c
 ```
 
@@ -43,7 +43,7 @@ gcc test.c
 
 **选项 -o** 
 
-```shell
+```
 gcc test.c -o test
 ```
 
@@ -51,7 +51,7 @@ gcc test.c -o test
 
 **选项 -E** 
 
-```shell
+```
 gcc -E test.c -o test.i
 ```
 
@@ -59,7 +59,7 @@ gcc -E test.c -o test.i
 
 **选项 -S** 
 
-```shell
+```
 gcc -S test.i
 ```
 
@@ -67,7 +67,7 @@ gcc -S test.i
 
 **选项 -c** 
 
-```shell
+```
 gcc -c test.s
 ```
 
@@ -75,7 +75,7 @@ gcc -c test.s
 
 **无选项链接** 
 
-```shell
+```
 gcc test.o -o test
 ```
 
@@ -83,7 +83,7 @@ gcc test.o -o test
 
 **选项 -O** 
 
-```shell
+```
 gcc -O1 test.c -o test
 ```
 
@@ -97,7 +97,7 @@ gcc -O1 test.c -o test
 
 **多个文件一起编译** 
 
-```shell
+```
 gcc testfun.c test.c -o test
 ```
 
@@ -105,7 +105,7 @@ gcc testfun.c test.c -o test
 
 **分别编译各个源文件，之后对编译后输出的目标文件链接。** 
 
-```shell
+```
 gcc -c testfun.c    #将testfun.c编译成testfun.o
 gcc -c test.c       #将test.c编译成test.o
 gcc -o testfun.o test.o -o test    #将testfun.o和test.o链接成test

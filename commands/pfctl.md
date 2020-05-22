@@ -13,7 +13,7 @@ PF防火墙的功能很多，本站只列举一些基本配置。
 
 要激活pf并且使它在启动时调用配置文件，编辑`/etc/rc.conf`文件，修改配置pf的一行：
 
-```shell
+```
 pf=yes
 ```
 
@@ -21,7 +21,7 @@ pf=yes
 
 也可以通过pfctl程序启动和停止pf：
 
-```shell
+```
 pfctl -e
 pfctl -d
 ```
@@ -50,7 +50,7 @@ pfctl -d
 
 引导之后，PF可以通过pfctl程序进行操作，以下是一些例子：
 
-```shell
+```
 pfctl -f /etc/pf.conf  # 载入 pf.conf 文件
 pfctl -nf /etc/pf.conf # 解析文件，但不载入
 pfctl -Nf /etc/pf.conf # 只载入文件中的NAT规则

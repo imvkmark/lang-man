@@ -5,7 +5,7 @@ unset
 
 ## 概要
 
-```shell
+```
 unset [-f] [-v] [-n] [name ...]
 ```
 
@@ -17,7 +17,7 @@ unset [-f] [-v] [-n] [name ...]
 
 ## 选项
 
-```shell
+```
 -f：仅删除函数。
 -v：仅删除变量（不包括只读变量）。
 -n：删除具有引用属性的变量名（如果该选项存在）。
@@ -33,17 +33,17 @@ name（可选）：要删除的变量或函数。
 
 ## 例子
 
-```shell
+```
 # 删除变量。
 declare paper_size='B5'
 unset -v paper_size
 ```
-```shell
+```
 # 删除函数。
 function show_result(){ echo 'Last Command Return: $?'; }
 unset -f show_result
 ```
-```shell
+```
 # 当不指定选项时，优先删除变量，如果失败则删除函数。
 declare -i aa=100
 function aa(){ echo 'aa'; }
@@ -53,7 +53,7 @@ declare -p aa
 # 函数'aa'存在。
 declare -F|grep aa
 ```
-```shell
+```
 # 演示unset使用-n选项，name指定了引用变量时的情况。
 declare a=3
 # 定义引用变量
@@ -72,7 +72,7 @@ declare -p b
 declare -p a
 ```
 
-```shell
+```
 # 演示unset不使用-n选项，name指定了引用变量时的情况。
 declare a=3
 # 定义引用变量

@@ -5,7 +5,7 @@ return
 
 ## 概要
 
-```shell
+```
 return [n]
 ```
 
@@ -25,7 +25,7 @@ n（可选）：整数。
 
 ## 例子
 
-```shell
+```
 #!/usr/bin/env bash
 # 定义一个返回值大于255的函数
 example() {

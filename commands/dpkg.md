@@ -9,13 +9,13 @@ Debian Linux系统上安装、创建和管理软件包
 
 ###  语法
 
-```shell
+```
 dpkg(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -i：安装软件包；
 -r：删除软件包；
 -P：删除软件包的同时删除其配置文件；
@@ -32,7 +32,7 @@ Deb软件包：指定要操作的.deb软件包。
 
 ###  实例
 
-```shell
+```
 dpkg -i package.deb     # 安装包
 dpkg -r package         # 删除包
 dpkg -P package         # 删除包（包括配置文件）

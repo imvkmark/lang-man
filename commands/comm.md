@@ -5,7 +5,7 @@ comm
 
 ## 概要
 
-```shell
+```
 comm [OPTION]... FILE1 FILE2
 ```
 
@@ -18,7 +18,7 @@ comm [OPTION]... FILE1 FILE2
 
 ## 选项
 
-```shell
+```
 -1                        不输出第一列。
 -2                        不输出第二列。
 -3                        不输出第三列。
@@ -40,7 +40,7 @@ comm [OPTION]... FILE1 FILE2
 
 文本 `aaa.txt` 内容
 
-```shell
+```
 [root@localhost text]# cat aaa.txt 
 aaa
 bbb
@@ -53,7 +53,7 @@ eee
 
 文本 `bbb.txt` 内容
 
-```shell
+```
 [root@localhost text]# cat bbb.txt 
 bbb
 ccc
@@ -66,7 +66,7 @@ jjj
 
 比较结果
 
-```shell
+```
 [root@localhost text]# comm --nocheck-order aaa.txt bbb.txt 
 aaa
                 bbb
@@ -87,14 +87,14 @@ eee
 
 先通过 sort 将文件内容排序：
 
-```shell
+```
 [root@localhost ~]# sort aaa.txt > aaa1.txt
 [root@localhost ~]# sort bbb.txt > bbb1.txt
 ```
 
 比较结果：
 
-```shell
+```
 [root@localhost ~]# comm aaa1.txt bbb1.txt
 111
 222
@@ -112,7 +112,7 @@ eee
 
 打印两个文件的交集，需要删除第一列和第二列：
 
-```shell
+```
 [root@localhost text]# comm aaa.txt bbb.txt -1 -2
 bbb
 ccc
@@ -124,7 +124,7 @@ ccc
 
 aaa.txt的差集
 
-```shell
+```
 [root@localhost text]# comm aaa.txt bbb.txt -2 -3
 aaa
 ddd
@@ -135,7 +135,7 @@ eee
 
 bbb.txt的差集
 
-```shell
+```
 [root@localhost text]# comm aaa.txt bbb.txt -1 -3
 aaa
 hhh

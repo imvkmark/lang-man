@@ -9,14 +9,14 @@ pigz
 
 ### 语法
 
-```shell
+```
 pigz [ -cdfhikKlLmMnNqrRtz0..9,11 ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
 unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
 ```
 
 ### 参数
 
-```shell
+```
 -0 to -9, -11       # Compression level (level 11, zopfli, is much slower)
 --fast, --best      # Compression levels 1 and 9 respectively
 -b, --blocksize mmm # Set compression block size to mmmK (default 128K)
@@ -54,18 +54,18 @@ unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ na
 
 可以结合`tar`使用, 压缩命令
 
-```shell
+```
 tar -cvf - dir1 dir2 dir3 | pigz -p 8 > output.tgz
 ```
 
 解压命令
 
-```shell
+```
 pigz -p 8 -d output.tgz
 ```
 
 如果是gzip格式，也支持用tar解压
 
-```shell
+```
 tar -xzvf output.tgz
 ```

@@ -34,7 +34,7 @@ source返回文件最后一个命令的返回值，如果文件不能读取则�
 
 - 读取和执行/root/.bash_profile文件。
 
-```shell
+```
 [root@localhost ~]# source ~/.bash_profile
 ```
 

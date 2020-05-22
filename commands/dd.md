@@ -11,13 +11,13 @@ dd
 
 ###  语法 
 
-```shell
+```
 dd(选项)
 ```
 
 ###  选项 
 
-```shell
+```
 bs=<字节数>：将ibs（输入）与obs（输出）设成指定的字节数；
 cbs=<字节数>：转换时，每次只转换指定的字节数；
 conv=<关键字>：指定文件转换的方式；
@@ -33,7 +33,7 @@ skip=<区块数>：一开始读取时，跳过指定的区块数；
 
 ###  实例 
 
-```shell
+```
 [root@localhost text]# dd if=/dev/zero of=sun.txt bs=1M count=1
 1+0 records in
 1+0 records out
@@ -64,7 +64,7 @@ skip=<区块数>：一开始读取时，跳过指定的区块数；
 
 以上命令可以看出dd命令来测试内存操作速度：
 
-```shell
+```
 1048576 bytes (1.0 MB) copied, 0.006107 seconds, 172 MB/s
 ```
 
@@ -72,7 +72,7 @@ skip=<区块数>：一开始读取时，跳过指定的区块数；
 
 我们甚至可以使用 /dev/urandom 设备配合 dd 命令 来获取随机字符串。
 
-```shell
+```
 [root@localhost ~]# dd if=/dev/urandom bs=1 count=15|base64 -w 0
 15+0 records in
 15+0 records out

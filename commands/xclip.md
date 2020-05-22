@@ -17,7 +17,7 @@ xclip
 
 比如如下命令就把文件 /etc/passwd 的内容复制到 X master selections 里面了。
 
-```shell
+```
 xclip -i /etc/passwd
 ```
 

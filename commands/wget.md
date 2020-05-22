@@ -20,13 +20,13 @@ wget支持HTTP，HTTPS和FTP协议，可以使用HTTP代理。所谓的自动下
 
 ###  语法
 
-```shell
+```
 wget [参数] [URL地址]
 ```
 
 ###  选项
 
-```shell
+```
 启动参数：
 
 -V, –-version 显示wget的版本后退出
@@ -137,7 +137,7 @@ URL：下载指定的URL地址。
 
 **使用wget下载单个文件** 
 
-```shell
+```
 wget http://www.jsdig.com/testfile.zip
 ```
 
@@ -145,7 +145,7 @@ wget http://www.jsdig.com/testfile.zip
 
 **下载并以不同的文件名保存** 
 
-```shell
+```
 wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080
 ```
 
@@ -153,7 +153,7 @@ wget默认会以最后一个符合`/`的后面的字符来命令，对于动态�
 
 错误：下面的例子会下载一个文件并以名称`download.aspx?id=1080`保存:
 
-```shell
+```
 wget http://www.jsdig.com/download?id=1
 ```
 
@@ -161,13 +161,13 @@ wget http://www.jsdig.com/download?id=1
 
 正确：为了解决这个问题，我们可以使用参数`-O`来指定一个文件名：
 
-```shell
+```
 wget -O wordpress.zip http://www.jsdig.com/download.aspx?id=1080
 ```
 
 **wget限速下载** 
 
-```shell
+```
 wget --limit-rate=300k http://www.jsdig.com/testfile.zip
 ```
 
@@ -175,7 +175,7 @@ wget --limit-rate=300k http://www.jsdig.com/testfile.zip
 
 **使用wget断点续传** 
 
-```shell
+```
 wget -c http://www.jsdig.com/testfile.zip
 ```
 
@@ -183,7 +183,7 @@ wget -c http://www.jsdig.com/testfile.zip
 
 **使用wget后台下载** 
 
-```shell
+```
 wget -b http://www.jsdig.com/testfile.zip
 
 Continuing in background, pid 1840.
@@ -192,13 +192,13 @@ Output will be written to `wget-log'.
 
 对于下载非常大的文件的时候，我们可以使用参数`-b`进行后台下载，你可以使用以下命令来察看下载进度：
 
-```shell
+```
 tail -f wget-log
 ```
 
 **伪装代理名称下载** 
 
-```shell
+```
 wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16" http://www.jsdig.com/testfile.zip
 ```
 
@@ -208,13 +208,13 @@ wget --user-agent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/5
 
 当你打算进行定时下载，你应该在预定时间测试下载链接是否有效。我们可以增加`--spider`参数进行检查。
 
-```shell
+```
 wget --spider URL
 ```
 
 如果下载链接正确，将会显示:
 
-```shell
+```
 Spider mode enabled. Check if remote file exists.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
@@ -224,7 +224,7 @@ but recursion is disabled -- not retrieving.
 
 这保证了下载能在预定的时间进行，但当你给错了一个链接，将会显示如下错误:
 
-```shell
+```
 wget --spider url
 Spider mode enabled. Check if remote file exists.
 HTTP request sent, awaiting response... 404 Not Found
@@ -239,7 +239,7 @@ Remote file does not exist -- broken link!!!
 
 **增加重试次数** 
 
-```shell
+```
 wget --tries=40 URL
 ```
 
@@ -247,13 +247,13 @@ wget --tries=40 URL
 
 **下载多个文件** 
 
-```shell
+```
 wget -i filelist.txt
 ```
 
 首先，保存一份下载链接文件：
 
-```shell
+```
 cat > filelist.txt
 url1
 url2
@@ -265,7 +265,7 @@ url4
 
 **镜像网站** 
 
-```shell
+```
 wget --mirror -p --convert-links -P ./LOCAL URL
 ```
 
@@ -278,7 +278,7 @@ wget --mirror -p --convert-links -P ./LOCAL URL
 
 **过滤指定格式下载** 
 
-```shell
+```
 wget --reject=gif ur
 ```
 
@@ -286,7 +286,7 @@ wget --reject=gif ur
 
 **把下载信息存入日志文件** 
 
-```shell
+```
 wget -o download.log URL
 ```
 
@@ -294,7 +294,7 @@ wget -o download.log URL
 
 **限制总下载文件大小** 
 
-```shell
+```
 wget -Q5m -i filelist.txt
 ```
 
@@ -302,7 +302,7 @@ wget -Q5m -i filelist.txt
 
 **下载指定格式文件** 
 
-```shell
+```
 wget -r -A.pdf url
 ```
 
@@ -314,7 +314,7 @@ wget -r -A.pdf url
 
 **FTP下载** 
 
-```shell
+```
 wget ftp-url
 wget --ftp-user=USERNAME --ftp-password=PASSWORD url
 ```
@@ -323,13 +323,13 @@ wget --ftp-user=USERNAME --ftp-password=PASSWORD url
 
 使用wget匿名ftp下载：
 
-```shell
+```
 wget ftp-url
 ```
 
 使用wget用户名和密码认证的ftp下载：
 
-```shell
+```
 wget --ftp-user=USERNAME --ftp-password=PASSWORD url
 ```
 

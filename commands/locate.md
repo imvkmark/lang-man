@@ -15,13 +15,13 @@ locate指令和find找寻档案的功能类似，但locate是透过update程序�
 
 ### 语法
 
-```shell
+```
 locate [选择参数] [样式]
 ```
 
 ### 选项
 
-```shell
+```
 -b, --basename  # 仅匹配路径名的基本名称
 -c, --count     # 只输出找到的数量
 -d, --database DBPATH # 使用DBPATH指定的数据库，而不是默认数据库 /var/lib/mlocate/mlocate.db
@@ -48,7 +48,7 @@ locate [选择参数] [样式]
 
 实例1：查找和pwd相关的所有文件
 
-```shell
+```
 root ~ # locate pwd
 /bin/pwd
 /etc/.pwd.lock
@@ -69,7 +69,7 @@ root ~ # locate pwd
 
 实例2： 搜索etc目录下所有以sh开头的文件
 
-```shell
+```
 root ~ # locate /etc/sh
 /etc/shadow
 /etc/shadow-
@@ -78,7 +78,7 @@ root ~ # locate /etc/sh
 
 实例3：搜索etc目录下，所有以m开头的文件
 
-```shell
+```
 root ~ # locate /etc/m
 /etc/magic
 /etc/magic.mime

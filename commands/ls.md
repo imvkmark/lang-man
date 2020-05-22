@@ -9,7 +9,7 @@ ls
 
 ###  语法
 
-```shell
+```
 ls [选项] [文件名...]
    [-1abcdfgiklmnopqrstuxABCDFGLNQRSUX] [-w cols] [-T cols] [-I pattern] [--full-time] 
    [--format={long,verbose,commas,across,vertical,single-col‐umn}] 
@@ -19,7 +19,7 @@ ls [选项] [文件名...]
 
 ###  选项
 
-```shell
+```
 -C     # 多列输出，纵向排序。
 -F     # 每个目录名加 "/" 后缀，每个 FIFO 名加 "|" 后缀， 每个可运行名加“ * ”后缀。
 -R     # 递归列出遇到的子目录。
@@ -174,7 +174,7 @@ none # 不使用颜色，这是缺省项。
 
 ###  实例
 
-```shell
+```
 $ ls       # 仅列出当前目录可见文件
 $ ls -l    # 列出当前目录可见文件详细信息
 $ ls -hl   # 列出详细信息并以可读大小显示文件大小
@@ -183,7 +183,7 @@ $ ls -al   # 列出所有文件（包括隐藏）的详细信息
 
 显示当前目录下包括影藏文件在内的所有文件列表
 
-```shell
+```
 [root@localhost ~]# ls -a
 .   anaconda-ks.cfg  .bash_logout   .bashrc  install.log         .mysql_history  satools  .tcshrc   .vimrc
 ..  .bash_history    .bash_profile  .cshrc   install.log.syslog  .rnd            .ssh     .viminfo
@@ -191,7 +191,7 @@ $ ls -al   # 列出所有文件（包括隐藏）的详细信息
 
 输出长格式列表
 
-```shell
+```
 [root@localhost ~]# ls -1
 
 anaconda-ks.cfg
@@ -204,7 +204,7 @@ satools
 
 索引节点（index inode简称为“inode”）是Linux中一个特殊的概念，具有相同的索引节点号的两个文本本质上是同一个文件（除文件名不同外）。
 
-```shell
+```
 [root@localhost ~]# ls -i -l anaconda-ks.cfg install.log
 2345481 -rw------- 1 root root   859 Jun 11 22:49 anaconda-ks.cfg
 2345474 -rw-r--r-- 1 root root 13837 Jun 11 22:49 install.log
@@ -212,7 +212,7 @@ satools
 
 水平输出文件列表
 
-```shell
+```
 [root@localhost /]# ls -m
 
 bin, boot, data, dev, etc, home, lib, lost+found, media, misc, mnt, opt, proc, root, sbin, selinux, srv, sys, tmp, usr, var
@@ -222,7 +222,7 @@ bin, boot, data, dev, etc, home, lib, lost+found, media, misc, mnt, opt, proc, r
 
 最近修改的文件显示在最上面。
 
-```shell
+```
 [root@localhost /]# ls -t
 
 tmp  root  etc  dev  lib  boot  sys  proc  data  home  bin  sbin  usr  var  lost+found  media  mnt  opt  selinux  srv  misc
@@ -230,7 +230,7 @@ tmp  root  etc  dev  lib  boot  sys  proc  data  home  bin  sbin  usr  var  lost
 
 显示递归文件
 
-```shell
+```
 [root@localhost ~]# ls -R
 .:
 anaconda-ks.cfg  install.log  install.log.syslog  satools
@@ -241,7 +241,7 @@ black.txt  freemem.sh  iptables.sh  lnmp.sh  mysql  php502_check.sh  ssh_safe.sh
 
 打印文件的UID和GID
 
-```shell
+```
 [root@localhost /]# ls -n
 
 total 254
@@ -270,7 +270,7 @@ drwxr-xr-x  19 0 0  4096 Jun 11 23:38 var
 
 列出文件和文件夹的详细信息
 
-```shell
+```
 [root@localhost /]# ls -l
 
 total 254
@@ -299,7 +299,7 @@ drwxr-xr-x  19 root root  4096 Jun 11 23:38 var
 
 列出可读文件和文件夹详细信息
 
-```shell
+```
 [root@localhost /]# ls -lh
 
 total 254K
@@ -328,7 +328,7 @@ drwxr-xr-x  19 root root 4.0K Jun 11 23:38 var
 
 显示文件夹信息
 
-```shell
+```
 [root@localhost /]# ls -ld /etc/
 
 drwxr-xr-x 75 root root 4096 Oct 16 04:02 /etc/
@@ -336,7 +336,7 @@ drwxr-xr-x 75 root root 4096 Oct 16 04:02 /etc/
 
 按时间列出文件和文件夹详细信息
 
-```shell
+```
 [root@localhost /]# ls -lt
 
 total 254
@@ -365,7 +365,7 @@ drwxr-xr-x   2 root root  4096 Nov  8  2010 misc
 
 按修改时间列出文件和文件夹详细信息
 
-```shell
+```
 [root@localhost /]# ls -ltr
 
 total 254
@@ -394,7 +394,7 @@ drwxrwxrwt   3 root root 98304 Oct 16 08:54 tmp
 
 按照特殊字符对文件进行分类
 
-```shell
+```
 [root@localhost nginx-1.2.1]# ls -F
 
 auto/  CHANGES  CHANGES.ru  conf/  configure*  contrib/  html/  LICENSE  Makefile  man/  objs/  README  src/
@@ -402,7 +402,7 @@ auto/  CHANGES  CHANGES.ru  conf/  configure*  contrib/  html/  LICENSE  Makefil
 
 列出文件并标记颜色分类
 
-```shell
+```
 [root@localhost nginx-1.2.1]# ls --color=auto
 
 auto  CHANGES  CHANGES.ru  conf  configure  contrib  html  LICENSE  Makefile  man  objs  README  src

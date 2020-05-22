@@ -14,13 +14,13 @@ tailf和tail -f的区别
 
 ###  语法
 
-```shell
+```
 tailf logfile # 动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。
 ```
 
 ###  选项
 
-```shell
+```
 -n, --lines NUMBER  # 输出最后数行
 -NUMBER             # 与NUMBER相同 `-n NUMBER'
 -V, --version       # 输出版本信息并退出
@@ -33,7 +33,7 @@ tailf logfile # 动态跟踪日志文件logfile，最初的时候打印文件的
 
 ### 实例
 
-```shell
+```
 tailf log/WEB.LOG 
 tailf -n 5 log2014.log   # 显示文件最后5行内容
 ```

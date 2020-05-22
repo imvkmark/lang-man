@@ -15,33 +15,33 @@ CentOS安装Axel：
 
 32位CentOS执行下面命令：
 
-```shell
+```
 wget -c http://pkgs.repoforge.org/axel/axel-2.4-1.el5.rf.i386.rpm
 rpm -ivh axel-2.4-1.el5.rf.i386.rpm
 ```
 
 64位CentOS执行下面命令：
 
-```shell
+```
 wget -c http://pkgs.repoforge.org/axel/axel-2.4-1.el5.rf.x86_64.rpm
 rpm -ivh axel-2.4-1.el5.rf.x86_64.rpm
 ```
 
 Debian/Ubuntu安装Axel：
 
-```shell
+```
 apt-get install axel
 ```
 
 ###  语法
 
-```shell
+```
 axel [options] url1 [url2] [url...]
 ```
 
 ###  选项
 
-```shell
+```
 --max-speed=x , -s x         # 最高速度x
 --num-connections=x , -n x   # 连接数x
 --output=f , -o f            # 下载为本地文件f
@@ -60,7 +60,7 @@ axel [options] url1 [url2] [url...]
 
 如下载lnmp安装包指定10个线程，存到 `/tmp/`：
 
-```shell
+```
 axel -n 10 -o /tmp/ http://www.jsdig.com/lnmp.tar.gz
 ```
 

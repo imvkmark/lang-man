@@ -18,13 +18,13 @@ fuser
 
 ###  语法
 
-```shell
+```
 fuser(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -a：显示命令行中指定的所有文件；
 -k：杀死访问指定文件的所有进程；
 -i：杀死进程前需要用户进行确认；
@@ -42,19 +42,19 @@ fuser(选项)(参数)
 
 要列出使用`/etc/passwd`文件的本地进程的进程号，请输入：
 
-```shell
+```
 fuser /etc/passwd
 ```
 
 要列出使用`/etc/filesystems`文件的进程的进程号和用户登录名，请输入：
 
-```shell
+```
 fuser -u /etc/filesystems
 ```
 
 要终止使用给定文件系统的所有进程，请输入：
 
-```shell
+```
 fuser -k -x -u -c /dev/hd1  或者  fuser -kxuc /home
 ```
 
@@ -62,7 +62,7 @@ fuser -k -x -u -c /dev/hd1  或者  fuser -kxuc /home
 
 要列出正在使用已从给定文件系统删除的文件的全部进程，请输入：
 
-```shell
+```
 fuser -d /usr文件
 ```
 

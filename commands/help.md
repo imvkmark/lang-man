@@ -9,13 +9,13 @@ help
 
 ###  语法
 
-```shell
+```
 help(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -d：显示内建命令的简要描述。
 -m：按照man手册的格式输出内建命令的帮助信息。
 -s：仅输出内建命令的命令格式。
@@ -53,7 +53,7 @@ A：限于篇幅和主题，您可以在终端执行 'man bash' ， 'info bash' 
 
 使用help命令显示shell内部shopt命令的帮助信息，输入如下命令：
 
-```shell
+```
 help shopt                #获取shopt命令的帮助信息
 shopt: shopt [-pqsu] [-o long-option] optname [optname...]
     Toggle the values of variables controlling optional behavior.

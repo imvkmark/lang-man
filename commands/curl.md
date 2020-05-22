@@ -9,7 +9,7 @@ curl
 
 ### 语法
 
-```shell
+```
 curl(选项)(参数)
 ```
 
@@ -125,7 +125,7 @@ curl(选项)(参数)
 
 curl命令可以用来执行下载、发送各种HTTP请求，指定HTTP头部等操作。如果系统没有curl可以使用`yum install curl`安装，也可以下载安装。curl是将下载文件输出到stdout，将进度信息输出到stderr，不显示进度信息使用`--silent`选项。
 
-```shell
+```
 curl URL --silent
 ```
 
@@ -133,13 +133,13 @@ curl URL --silent
 
 使用选项`-O`将下载的数据写入到文件，必须使用文件的绝对地址：
 
-```shell
+```
 curl http://example.com/text.iso --silent -O
 ```
 
 选项`-o`将下载数据写入到指定名称的文件中，并使用`--progress`显示进度条：
 
-```shell
+```
 curl http://example.com/test.iso -o filename.iso --progress
 ######################################### 100.0%
 ```
@@ -148,21 +148,21 @@ curl http://example.com/test.iso -o filename.iso --progress
 
 `-s` 参数将不输出错误和进度信息。
 
-```shell
+```
 curl -s https://www.example.com
 # 上面命令一旦发生错误，不会显示错误信息。不发生错误的话，会正常显示运行结果。
 ```
 
 如果想让 curl 不产生任何输出，可以使用下面的命令。
 
-```shell
+```
 curl -s -o /dev/null https://google.com
 ```
 **断点续传**
 
 curl能够从特定的文件偏移处继续下载，它可以通过指定一个便宜量来下载部分文件：
 
-```shell
+```
 curl URL/File -C 偏移量
 
 #偏移量是以字节为单位的整数，如果让curl自动推断出正确的续传位置使用-C -：
@@ -175,7 +175,7 @@ curl -C -URL
 
 使用`--referer`选项指定参照页字符串：
 
-```shell
+```
 curl --referer http://www.google.com http://wangchujiang.com
 ```
 
@@ -183,14 +183,14 @@ curl --referer http://www.google.com http://wangchujiang.com
 
 有些网站访问会提示只能使用IE浏览器来访问，这是因为这些网站设置了检查用户代理，可以使用curl把用户代理设置为IE，这样就可以访问了。使用`--user-agent`或者`-A`选项：
 
-```shell
+```
 curl URL --user-agent "Mozilla/5.0"
 curl URL -A "Mozilla/5.0"
 ```
 
 其他HTTP头部信息也可以使用curl来发送，使用`-H`"头部信息" 传递多个头部信息，例如：
 
-```shell
+```
 curl -H "Host:wangchujiang.com" -H "accept-language:zh-cn" URL
 ```
 
@@ -198,7 +198,7 @@ curl -H "Host:wangchujiang.com" -H "accept-language:zh-cn" URL
 
 使用`--limit-rate`限制curl的下载速度：
 
-```shell
+```
 curl URL --limit-rate 50k
 ```
 
@@ -206,13 +206,13 @@ curl URL --limit-rate 50k
 
 使用`--max-filesize`指定可下载的最大文件大小：
 
-```shell
+```
 curl URL --max-filesize bytes
 ```
 
 如果文件大小超出限制，命令则返回一个非0退出码，如果命令正常则返回0。
 
-```shell
+```
 curl --limit-rate 200k https://example.com
 # 上面命令将带宽限制在每秒 200K 字节。
 ```
@@ -221,7 +221,7 @@ curl --limit-rate 200k https://example.com
 
 使用curl选项 -u 可以完成HTTP或者FTP的认证，可以指定密码，也可以不指定密码在后续操作中输入密码：
 
-```shell
+```
 curl -u user:pwd http://wangchujiang.com
 curl -u user http://wangchujiang.com
 ```
@@ -230,7 +230,7 @@ curl -u user http://wangchujiang.com
 
 通过`-I`或者`-head`可以只打印出HTTP头部信息：
 
-```shell
+```
 [root@localhost text]# curl -I http://wangchujiang.com
 HTTP/1.1 200 OK
 Server: nginx/1.2.5
@@ -243,7 +243,7 @@ X-Pingback: http://wangchujiang.com/xmlrpc.php
 
 **get请求**
 
-```shell
+```
 curl "http://www.wangchujiang.com"    # 如果这里的URL指向的是一个文件或者一幅图都可以直接下载到本地
 curl -i "http://www.wangchujiang.com" # 显示全部信息
 curl -l "http://www.wangchujiang.com" # 只显示头部信息
@@ -252,7 +252,7 @@ curl -v "http://www.wangchujiang.com" # 显示get请求全过程解析
 
 **post请求**
 
-```shell
+```
 $ curl -d "param1=value1&param2=value2" "http://www.wangchujiang.com/login"
 
 curl -d'login=emma＆password=123' -X POST https://wangchujiang.com/login
@@ -263,21 +263,21 @@ $ curl -d 'login=emma' -d 'password=123' -X POST  https://wangchujiang.com/login
 
 `--data-urlencode` 参数等同于 `-d`，发送 `POST` 请求的数据体，区别在于会自动将发送的数据进行 `URL` 编码。
 
-```shell
+```
 curl --data-urlencode 'comment=hello world' https://wangchujiang.com/login
 # 上面代码中，发送的数据hello world之间有一个空格，需要进行 URL 编码。
 ```
 
 **读取本地文本文件的数据，向服务器发送**
 
-```shell
+```
 curl -d '@data.txt' https://wangchujiang.com/upload
 # 读取data.txt文件的内容，作为数据体向服务器发送。
 ```
 
 **json格式的post请求**
 
-```shell
+```
 curl -l -H "Content-type: application/json" -X POST -d '{"phone":"13521389587","password":"test"}' http://wangchujiang.com/apis/users.json
 ```
 
@@ -285,36 +285,36 @@ curl -l -H "Content-type: application/json" -X POST -d '{"phone":"13521389587","
 
 使用`--cookie "COKKIES"`选项来指定cookie，多个cookie使用分号分隔：
 
-```shell
+```
 curl http://wangchujiang.com --cookie "user=root;pass=123456"
 ```
 
 将cookie另存为一个文件，使用`--cookie-jar`选项：
 
-```shell
+```
 curl URL --cookie-jar cookie_file
 ```
 
 
 `-b` 参数用来向服务器发送 Cookie。
 
-```shell
+```
 curl -b 'foo=bar' https://taobao.com
 # 上面命令会生成一个标头Cookie: foo=bar，向服务器发送一个名为foo、值为bar的 Cookie。
 ```
 
-```shell
+```
 curl -b 'foo1=bar' -b 'foo2=baz' https://taobao.com
 # 上面命令发送两个 Cookie。
 
-```shell
+```
 curl -b cookies.txt https://www.taobao.com
 # 上面命令读取本地文件 cookies.txt，里面是服务器设置的 Cookie（参见-c参数），将其发送到服务器。
 ```
 
 **Cookie 写入一个文件**
 
-```shell
+```
 curl -c cookies.txt https://www.taobao.com
 # 上面命令将服务器的 HTTP 回应所设置 Cookie 写入文本文件cookies.txt。
 ```
@@ -323,14 +323,14 @@ curl -c cookies.txt https://www.taobao.com
 
 `-e` 参数用来设置 `HTTP` 的标头 `Referer`，表示请求的来源。
 
-```shell
+```
 curl -e 'https://taobao.com?q=example' https://www.example.com
 # 上面命令将Referer标头设为 https://taobao.com?q=example。
 ```
 
 `-H` 参数可以通过直接添加标头 `Referer`，达到同样效果。
 
-```shell
+```
 curl -H 'Referer: https://taobao.com?q=example' https://www.example.com
 ```
 
@@ -338,21 +338,21 @@ curl -H 'Referer: https://taobao.com?q=example' https://www.example.com
 
 `-F` 参数用来向服务器上传二进制文件。
 
-```shell
+```
 curl -F 'file=@photo.png' https://taobao.com/profile
 # 上面命令会给 HTTP 请求加上标头 Content-Type: multipart/form-data ，然后将文件photo.png作为file字段上传。
 ```
 
 `-F` 参数可以指定 `MIME` 类型。
 
-```shell
+```
 curl -F 'file=@photo.png;type=image/png' https://taobao.com/profile
 # 上面命令指定 MIME 类型为image/png，否则 curl 会把 MIME 类型设为 application/octet-stream。
 ```
 
 `-F` 参数也可以指定文件名。
 
-```shell
+```
 curl -F 'file=@photo.png;filename=me.png' https://taobao.com/profile
 # 上面命令中，原始文件名为photo.png，但是服务器接收到的文件名为me.png。
 ```
@@ -361,24 +361,24 @@ curl -F 'file=@photo.png;filename=me.png' https://taobao.com/profile
 
 `-H` 参数添加 `HTTP` 请求的标头。
 
-```shell
+```
 curl -H 'Accept-Language: en-US' https://google.com
 # 上面命令添加 HTTP 标头 Accept-Language: en-US。
 ```
 
-```shell
+```
 curl -H 'Accept-Language: en-US' -H 'Secret-Message: xyzzy' https://google.com
 # 上面命令添加两个 HTTP 标头。
 ```
 
-```shell
+```
 curl -d '{"login": "emma", "pass": "123"}' -H 'Content-Type: application/json' https://google.com/login
 # 上面命令添加 HTTP 请求的标头是 Content-Type: application/json，然后用 -d 参数发送 JSON 数据。
 ```
 
 **跳过 SSL 检测**
 
-```shell
+```
 curl -k https://www.example.com
 # 上面命令不会检查服务器的 SSL 证书是否正确。
 ```
@@ -387,7 +387,7 @@ curl -k https://www.example.com
 
 `-L` 参数会让 `HTTP` 请求跟随服务器的重定向。`curl` 默认不跟随重定向。
 
-```shell
+```
 curl -L -d 'tweet=hi' https://api.example.com/tweet
 ```
 
@@ -395,18 +395,18 @@ curl -L -d 'tweet=hi' https://api.example.com/tweet
 
 `-v` 参数输出通信的整个过程，用于调试。
 
-```shell
+```
 curl -v https://www.example.com
 # --trace参数也可以用于调试，还会输出原始的二进制数据。
 ```
 
-```shell
+```
 $ curl --trace - https://www.example.com
 ```
 
 **获取本机外网ip**
 
-```shell
+```
 curl ipecho.net/plain
 ```
 

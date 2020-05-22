@@ -9,14 +9,14 @@ nc
 
 ###  语法
 
-```shell
+```
 nc [-hlnruz][-g<网关...>][-G<指向器数目>][-i<延迟秒数>][-o<输出文件>][-p<通信端口>]
 [-s<来源位址>][-v...][-w<超时秒数>][主机名称][通信端口...]
 ```
 
 ###  选项
 
-```shell
+```
 -g<网关> 设置路由器跃程通信网关，最多可设置8个。
 -G<指向器数目> 设置来源路由指向器，其数值为4的倍数。
 -h 在线帮助。
@@ -37,7 +37,7 @@ nc [-hlnruz][-g<网关...>][-G<指向器数目>][-i<延迟秒数>][-o<输出文�
 
 TCP端口扫描
 
-```shell
+```
 [root@localhost ~]# nc -v -z -w2 192.168.0.3 1-100 
 192.168.0.3: inverse host lookup failed: Unknown host
 (UNKNOWN) [192.168.0.3] 80 (http) open
@@ -48,13 +48,13 @@ TCP端口扫描
 扫描192.168.0.3 的端口 范围是 1-100
 扫描UDP端口
 
-```shell
+```
 [root@localhost ~]# nc -u -z -w2 192.168.0.1 1-1000  # 扫描192.168.0.3 的端口 范围是 1-1000
 ```
 
 扫描指定端口
 
-```shell
+```
 [root@localhost ~]# nc -nvv 192.168.0.1 80 # 扫描 80端口
 (UNKNOWN) [192.168.0.1] 80 (?) open
 y  //用户输入
@@ -62,7 +62,7 @@ y  //用户输入
 
 查看从服务器到目的地的出站端口 443 是否被防火墙阻止
 
-```shellbash
+```bash
 nc -vz acme-v02.api.letsencrypt.org 443 -w2
 # Ncat: Version 7.50 ( https://nmap.org/ncat )
 # Ncat: Connected to 23.77.214.183:443.

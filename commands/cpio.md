@@ -9,13 +9,13 @@ cpio
 
 ###  语法
 
-```shell
+```
 cpio(选项)
 ```
 
 ###  选项
 
-```shell
+```
 -0或--null：接受新增列控制字符，通常配合find指令的“-print0”参数使用；
 -a或--rest-access-time：重新设置文件的存取时间；
 -A或--append：附加到已存在的备份文档中，且这个备份文档必须存放在磁盘上，而不能放置于磁带机里；
@@ -62,13 +62,13 @@ cpio(选项)
 
 **将`/etc`下的所有普通文件都备份到`/opt/etc.cpio`，使用以下命令：** 
 
-```shell
+```
 find /etc –type f | cpio –ocvB >/opt/etc.cpio
 ```
 
 **将系统上所有资料备份到磁带机内，使用以下命令：** 
 
-```shell
+```
 find / -print | cpio -covB > /dev/st0
 ```
 
@@ -76,7 +76,7 @@ find / -print | cpio -covB > /dev/st0
 
 **查看上例磁带机上备份的文件，使用以下命令：** 
 
-```shell
+```
 cpio  -icdvt < /dev/st0 > /tmp/st_content
 ```
 
@@ -84,7 +84,7 @@ cpio  -icdvt < /dev/st0 > /tmp/st_content
 
 **将示例1中的备份包还原到相应的位置，如果有相同文件进行覆盖，使用以下命令：** 
 
-```shell
+```
 cpio –icduv < /opt/etc.cpio
 ```
 

@@ -13,13 +13,13 @@ cut
 
 ### 语法
 
-```shell
+```
 cut（选项）（参数）
 ```
 
 ### 选项
 
-```shell
+```
 -b：仅显示行中指定直接范围的内容；
 -c：仅显示行中指定范围的字符；
 -d：指定字段的分隔符，默认的字段分隔符为“TAB”；
@@ -39,7 +39,7 @@ cut（选项）（参数）
 
 例如有一个学生报表信息，包含 No、Name、Mark、Percent：
 
-```shell
+```
 [root@localhost text]# cat test.txt
 No Name Mark Percent
 01 tom 69 91
@@ -50,7 +50,7 @@ No Name Mark Percent
 
 使用  **-f**  选项提取指定字段（这里的 f 参数可以简单记忆为 `--fields`的缩写）：
 
-```shell
+```
 [root@localhost text]# cut -f 1 test.txt
 No
 01
@@ -58,7 +58,7 @@ No
 03
 ```
 
-```shell
+```
 [root@localhost text]# cut -f2,3 test.txt
 Name Mark
 tom 69
@@ -69,7 +69,7 @@ alex 68
 
  **--complement**  选项提取指定字段之外的列（打印除了第二列之外的列）：
 
-```shell
+```
 [root@localhost text]# cut -f2 --complement test.txt
 No Mark Percent
 01 69 91
@@ -79,7 +79,7 @@ No Mark Percent
 
 使用  **-d**  选项指定字段分隔符：
 
-```shell
+```
 [root@localhost text]# cat test2.txt
 No;Name;Mark;Percent
 01;tom;69;91
@@ -87,7 +87,7 @@ No;Name;Mark;Percent
 03;alex;68;98
 ```
 
-```shell
+```
 [root@localhost text]# cut -f2 -d";" test2.txt
 Name
 tom
@@ -112,7 +112,7 @@ cut 命令可以将一串字符作为列来显示，字符字段的记法：
 
 **示例**
 
-```shell
+```
 [root@localhost text]# cat test.txt
 abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyz
@@ -124,7 +124,7 @@ abcdefghijklmnopqrstuvwxyz
 
 打印第 1 个到第 3 个字符：
 
-```shell
+```
 [root@localhost text]# cut -c1-3 test.txt
 abc
 abc
@@ -136,7 +136,7 @@ abc
 
 打印前 2 个字符：
 
-```shell
+```
 [root@localhost text]# cut -c-2 test.txt
 ab
 ab
@@ -148,7 +148,7 @@ ab
 
 打印从第 5 个字符开始到结尾：
 
-```shell
+```
 [root@localhost text]# cut -c5- test.txt
 efghijklmnopqrstuvwxyz
 efghijklmnopqrstuvwxyz

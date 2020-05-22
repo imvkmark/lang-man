@@ -5,7 +5,7 @@ date
 
 ## 概要
 
-```shell
+```
 date [OPTION]... [+FORMAT]
 date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 ```
@@ -19,7 +19,7 @@ date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 
 format：输出的时间格式。
 
-```shell
+```
 format可用的转义序列如下：
 
 %%      百分号
@@ -84,7 +84,7 @@ _      (下划线) 使用空格填充相应的字段。
 
 ## 选项 
 
-```shell
+```
 长选项与短选项等价
 
 -d, --date=STRING          解析字符串并按照指定格式输出，字符串不能是'now'。
@@ -108,7 +108,7 @@ _      (下划线) 使用空格填充相应的字段。
 
 ## 例子 
 
-```shell
+```
 # 格式化输出：
 date +"%Y-%m-%d"
 2009-12-07

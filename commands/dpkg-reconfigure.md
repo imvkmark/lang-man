@@ -11,13 +11,13 @@ Debian Linux中重新配制一个已经安装的软件包
 
 ###  语法
 
-```shell
+```
 dpkg-reconfigure(选项)(参数)
 ```
 
 ###  选项
 
-```shell
+```
 -a：重新配置所有的软件包；
 -u或--unseen-only：仅显示未提过的问题；
 --default-priority：使用默认优先级，而非“低”级；
@@ -36,7 +36,7 @@ dpkg-reconfigure(选项)(参数)
 
 用于配置语言：
 
-```shell
+```
 sudo dpkg-reconfigure locales
 ```
 

@@ -9,7 +9,7 @@ xhost
 
 ###  语法
 
-```shell
+```
 xhost(参数)
 ```
 

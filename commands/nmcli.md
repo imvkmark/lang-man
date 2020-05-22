@@ -9,13 +9,13 @@ nmcli
 
 ###  语法
 
-```shell
+```
 nmcli [OPTIONS] OBJECT { COMMAND | help }
 ```
 
 ###  选项
 
-```shell
+```
 OPTIONS
   -t[erse]                                  # terse output 简洁的输出
   -p[retty]                                 # pretty output 漂亮的输出
@@ -39,7 +39,7 @@ OBJECT
 
 ###  实例
 
-```shell
+```
 nmcli connection show           # 查看当前连接状态
 nmcli connection reload         # 重启服务
 nmcli connection show -active   # 显示活动的连接

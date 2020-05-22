@@ -1,25 +1,15 @@
-普通命令
+普通命令(1)
 ======================================
 .. toctree::
    :maxdepth: 1
-   :caption: 普通命令
 
    ab.md
-   accept.md
    ack.md
-   alias.md
-   apachectl.md
    apk.md
    apropos.md
-   aptitude.md
    ar.md
    arch.md
    arj.md
-   arp.md
-   arpd.md
-   arping.md
-   arptables.md
-   arpwatch.md
    as.md
    at.md
    atop.md
@@ -27,16 +17,10 @@
    atrm.md
    awk.md
    axel.md
-   badblocks.md
-   basename.md
    batch.md
    bc.md
    bg.md
-   bind.md
-   blkid.md
-   blockdev.md
    bmodinfo.md
-   break.md
    builtin.md
    bunzip2.md
    bye.md
@@ -58,16 +42,8 @@
    chcon.md
    chfn.md
    chgrp.md
-   chkconfig.md
-   chmod.md
-   chown.md
-   chpasswd.md
-   chroot.md
    chsh.md
    cksum.md
-   clear.md
-   clock.md
-   clockdiff.md
    cmp.md
    col.md
    colrm.md
@@ -76,90 +52,56 @@
    compress.md
    consoletype.md
    continue.md
-   convertquota.md
    cp.md
    cpio.md
    crontab.md
    csplit.md
    cu.md
-   cupsdisable.md
-   cupsenable.md
    curl.md
    cut.md
    date.md
    dd.md
-   declare.md
-   depmod.md
    df.md
-   dhclient.md
-   dhcpd.md
-   dhcrelay.md
-   diff.md
    diff3.md
    diffstat.md
    dig.md
    dircolors.md
-   dirname.md
    dirs.md
    disown.md
-   dmesg.md
-   dmidecode.md
    dnf.md
    dnsdomainname.md
    domainname.md
    dos2unix.md
    dpkg-deb.md
-   dpkg-divert.md
    dpkg-preconfigure.md
    dpkg-query.md
    dpkg-reconfigure.md
    dpkg-split.md
-   dpkg-statoverride.md
    dpkg-trigger.md
    dpkg.md
    dris.md
    dstat.md
    du.md
-   dump.md
-   e2fsck.md
-   e2label.md
-   echo.md
    ed.md
-   edquota.md
    egrep.md
    eject.md
    elinks.md
    elm.md
    emacs.md
-   enable.md
-   env.md
-   ethtool.md
    ex.md
-   exec.md
-   exit.md
    expand.md
    export.md
-   exportfs.md
-   expr.md
    false.md
    fc.md
-   fdisk.md
    fg.md
    fgrep.md
-   file.md
    find.md
-   findfs.md
    finger.md
    firewall-cmd.md
    fishshell.md
    fmt.md
    fold.md
-   fping.md
-   free.md
-   fsck.md
-   ftp.md
    ftpcount.md
-   ftpshut.md
    ftptop.md
    ftpwho.md
    fuser.md
@@ -167,66 +109,30 @@
    gcov.md
    gdb.md
    get_module.md
-   getenforce.md
-   getsebool.md
-   git.md
    gpasswd.md
-   gpm.md
    grep.md
-   groupadd.md
-   groupdel.md
-   groupmod.md
    groups.md
-   grpck.md
-   grpconv.md
-   grpunconv.md
-   grub.md
    gunzip.md
    gzexe.md
    gzip.md
-   halt.md
-   hdparm.md
    head.md
    help.md
-   hexdump.md
-   history.md
    host.md
    hostid.md
-   hostname.md
-   hping3.md
    htdigest.md
    htop.md
    htpasswd.md
-   hwclock.md
-   iconv.md
    id.md
-   ifcfg.md
-   ifconfig.md
-   ifdown.md
    ifstat.md
-   iftop.md
-   ifup.md
    indent.md
-   info.md
-   init.md
    inotifywait.md
-   insmod.md
    install.md
    iostat.md
    iotop.md
-   ip.md
    ip6tables-restore.md
    ip6tables-save.md
-   ip6tables.md
    ipcalc.md
-   ipcrm.md
-   ipcs.md
    iperf.md
-   iptables-restore.md
-   iptables-save.md
-   iptables.md
-   iptraf.md
-   iptstate.md
    ispell.md
    jed.md
    jobs.md
@@ -234,36 +140,20 @@
    join.md
    jwhois.md
    kernelversion.md
-   kexec.md
-   kill.md
    killall.md
    last.md
    lastb.md
-   lastlog.md
    ld.md
-   ldconfig.md
    ldd.md
-   less.md
    let.md
    lftp.md
    lftpget.md
    lha.md
-   lilo.md
    ln.md
-   lnstat.md
-   local.md
    locate.md
    logger.md
-   login.md
    logname.md
-   logout.md
-   logrotate.md
-   logsave.md
-   logwatch.md
    look.md
-   losetup.md
-   lp.md
-   lpadmin.md
    lpc.md
    lpq.md
    lpr.md
@@ -272,77 +162,34 @@
    ls.md
    lsattr.md
    lsb_release.md
-   lsblk.md
    lscpu.md
-   lsmod.md
-   lsof.md
-   lspci.md
-   lsusb.md
    ltrace.md
-   lvcreate.md
-   lvdisplay.md
-   lvextend.md
-   lvreduce.md
-   lvremove.md
-   lvresize.md
-   lvscan.md
    lynx.md
    mail.md
    mailq.md
    mailstat.md
-   make.md
-   man.md
    mapfile.md
    md5sum.md
    mesg.md
-   mii-tool.md
-   mkbootdisk.md
-   mkdir.md
-   mke2fs.md
-   mkfs.md
-   mkinitrd.md
-   mkisofs.md
-   mknod.md
-   mkswap.md
-   mktemp.md
-   modprobe.md
-   more.md
-   mount.md
    mpstat.md
-   mtools.md
    mv.md
-   mysql.md
    mysqladmin.md
    mysqldump.md
    mysqlimport.md
    mysqlshow.md
-   named-checkzone.md
    nano.md
    nc.md
    ncftp.md
-   nethogs.md
-   netstat.md
-   newusers.md
-   nfsstat.md
-   ngrep.md
-   nice.md
    nisdomainname.md
-   nl.md
    nm.md
    nmap.md
    nmcli.md
    nohup.md
-   nologin.md
    nproc.md
    nslookup.md
-   ntpdate.md
-   ntsysv.md
    objdump.md
    od.md
    openssl.md
-   parted.md
-   partprobe.md
-   passwd.md
    paste.md
    patch.md
    pathchk.md
@@ -351,16 +198,12 @@
    pgrep.md
    php.md
    pico.md
-   pidof.md
    pigz.md
-   ping.md
    pkill.md
    pmap.md
    popd.md
-   poweroff.md
    ppp-off.md
    pr.md
-   printf.md
    protoize.md
    ps.md
    pssh.md
@@ -368,111 +211,55 @@
    pstree.md
    pushd.md
    pv.md
-   pvchange.md
-   pvck.md
-   pvcreate.md
-   pvdisplay.md
-   pvremove.md
-   pvs.md
-   pvscan.md
-   pwck.md
-   pwconv.md
    pwd.md
-   pwunconv.md
-   quota.md
-   quotacheck.md
-   quotaoff.md
-   quotaon.md
    rcconf.md
    rcp.md
-   read.md
    readelf.md
-   readonly.md
-   reboot.md
-   reject.md
-   rename.md
-   renice.md
-   repquota.md
    resize.md
-   restore.md
-   restorecon.md
    return.md
    rev.md
-   rexec.md
    rlogin.md
    rm.md
-   rmdir.md
-   rmmod.md
-   route.md
-   rpm.md
-   rpm2cpio.md
-   rpmbuild.md
    rpmdb.md
    rpmquery.md
    rpmsign.md
    rpmverify.md
    rsh.md
    rsync.md
-   runlevel.md
    sar.md
    scp.md
-   screen.md
    sed.md
    seinfo.md
-   semanage.md
    sendmail.md
    seq.md
-   service.md
    sesearch.md
-   set.md
    setfacl.md
-   setpci.md
-   setsebool.md
-   setsid.md
-   sftp-server.md
    sftp.md
    sh.md
    shift.md
    shopt.md
-   showmount.md
    shuf.md
-   shutdown.md
    skill.md
    slabtop.md
-   sleep.md
    slocate.md
    smbclient.md
-   smbpasswd.md
-   sort.md
    source.md
    speedtest-cli.md
    spell.md
    split.md
-   squid.md
    squidclient.md
-   ss.md
    ssh-add.md
    ssh-agent.md
    ssh-copy-id.md
    ssh-keygen.md
    ssh-keyscan.md
-   ssh.md
-   sshd.md
    startx.md
-   stat.md
    strace.md
    strings.md
-   stty.md
    su.md
-   sudo.md
    sum.md
    supervisord.md
    suspend.md
-   swapoff.md
-   swapon.md
-   sync.md
-   sysctl.md
-   syslog.md
    systemctl.md
    systool.md
    tac.md
@@ -480,68 +267,35 @@
    tailf.md
    talk.md
    tar.md
-   tcpdump.md
    tcpreplay.md
-   tee.md
    telint.md
    telnet.md
    tempfile.md
-   test.md
-   tftp.md
-   time.md
-   times.md
    tload.md
    tmux.md
    top.md
    touch.md
    tput.md
    tr.md
-   tracepath.md
-   traceroute.md
    trap.md
    tree.md
    true.md
-   tty.md
    type.md
-   ulimit.md
-   umask.md
-   umount.md
    unalias.md
-   uname.md
    unarj.md
    uncompress.md
    unexpand.md
-   uniq.md
-   unlink.md
    unprotoize.md
    unrar.md
    unset.md
    unzip.md
-   updatedb.md
    uptime.md
-   useradd.md
-   userdel.md
-   usermod.md
-   usernetctl.md
-   users.md
-   uucico.md
    uupick.md
    uuto.md
    vdfuse.md
-   vgchange.md
-   vgconvert.md
-   vgcreate.md
-   vgdisplay.md
-   vgextend.md
-   vgreduce.md
-   vgremove.md
-   vgrename.md
-   vgscan.md
    vi.md
-   vmstat.md
    volname.md
    w.md
-   wait.md
    wall.md
    watch.md
    wc.md
@@ -551,7 +305,6 @@
    which.md
    who.md
    whoami.md
-   write.md
    xargs.md
    xauth.md
    xclip.md
@@ -566,7 +319,6 @@
    ypdomainname.md
    zcat.md
    zfore.md
-   zip.md
    zipinfo.md
    zipsplit.md
    znew.md

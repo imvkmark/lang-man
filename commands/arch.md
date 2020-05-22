@@ -5,7 +5,7 @@ arch
 
 ## 概要
 
-```shell
+```
 arch [OPTION]...
 ```
 
@@ -15,14 +15,14 @@ arch [OPTION]...
 
 ## 选项
 
-```shell
+```
 --help       显示帮助信息并退出。
 --version    显示版本信息并退出。
 ```
 
 ## 例子
 
-```shell
+```
 [root@localhost ~]# arch
 x86_64
 ```

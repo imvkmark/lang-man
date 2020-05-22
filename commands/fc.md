@@ -5,7 +5,7 @@ fc
 
 ## 概要
 
-```shell
+```
 fc [-e ename] [-lnr] [first] [last]
 fc -s [pat=rep] [command]
 ```
@@ -18,7 +18,7 @@ fc -s [pat=rep] [command]
 
 ## 选项
 
-```shell
+```
 -e ename                  选择使用的编辑器，默认调用次序为环境变量`FCEDIT`、环境变量`EDITOR`、`vi`。
 -l                        列出而不是编辑。
 -n                        列出时不输出行号（需配合-l选项）。
@@ -40,7 +40,7 @@ last：可选；可以是字符串（以该字符串开头的最新命令）、�
 
 替换命令参数:
 
-```shell
+```
 # 列出 ~ 目录
 ls ~
 # 替换 ~ 为 / ，替换后列出根目录， 
@@ -49,7 +49,7 @@ fc -s ~=/
 
 显示最近使用的10条历史命令：
 
-```shell
+```
 [root@localhost ~]# fc -l -10
 1039     type -a grep
 1040     export
@@ -65,7 +65,7 @@ fc -s ~=/
 
 编辑第1040条历史命令：
 
-```shell
+```
 [root@localhost ~]# fc 1040
 ```
 

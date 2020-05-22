@@ -5,7 +5,7 @@ who
 
 ## 概要
 
-```shell
+```
 who [OPTION]... [file] [am i]
 ```
 
@@ -16,7 +16,7 @@ who [OPTION]... [file] [am i]
 
 ## 选项
 
-```shell
+```
 -a, --all                                等价于调用 '-b -d --login -p -r -t -T -u'。
 -b, --boot                               上次系统启动的时间。
 -d, --dead                               打印 dead 状态的进程。
@@ -50,7 +50,7 @@ file（可选）：指定 `file` 代替默认的 `/var/run/utmp` 、`/etc/utmp` 
 
 ## 例子
 
-```shell
+```
 [root@localhost ~]# who
 root     pts/0        2013-08-19 15:04 (192.168.0.134)
 root     pts/1        2013-12-20 10:37 (180.111.155.40)

@@ -22,7 +22,7 @@ export -p
 
 ## 选项
 
-```shell
+```
 -f：指向函数。
 -n：删除变量的导出属性。
 -p：显示全部拥有导出属性的变量。
@@ -43,7 +43,7 @@ export返回true除非你提供了非法选项或非法名称。
 
 ## 例子
 
-```shell
+```
 # 显示全部拥有导出属性的变量。
 # export -p
 # export
@@ -51,7 +51,7 @@ export返回true除非你提供了非法选项或非法名称。
 # export -pf
 ```
 
-```shell
+```
 # 首先删除要演示的变量名
 #unset a b
 # 定义变量的同时增加导出属性
@@ -70,7 +70,7 @@ export -n a b
 ```
 
 
-```shell
+```
 # 首先删除要演示的函数名
 unset func_1 func_2
 # 创建函数
@@ -84,7 +84,7 @@ export -f func_1 func_2
 export -fn a b
 ```
 
-```shell
+```
 # 添加环境变量（JAVA）到`~/.bashrc`
 PATH=/usr/local/jdk1.7.0/bin:$PATH
 # 添加当前位置到动态库环境变量
@@ -155,7 +155,7 @@ A：因为`declare`也能够设置变量或函数的导出属性，详见`declar
 
 一般来说，配置交叉编译工具链的时候需要指定编译工具的路径，此时就需要设置环境变量。查看已经存在的环境变量：
 
-```shell
+```
 [root@localhost ~]# export
 declare -x G_BROKEN_FILENAMES="1"
 declare -x HISTSIZE="1000"

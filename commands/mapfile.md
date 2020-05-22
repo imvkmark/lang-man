@@ -5,7 +5,7 @@ mapfile
 
 ## 概要
 
-```shell
+```
 mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]
 ```
 
@@ -16,7 +16,7 @@ mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] 
 
 ## 选项
 
-```shell
+```
 -d delim       将delim设为行分隔符，代替默认的换行符。
 -n count       从标准输入中获取最多count行，如果count为零那么获取全部。
 -O origin      从数组下标为origin的位置开始赋值，默认的下标为0。
@@ -41,7 +41,7 @@ array（可选）：用于输出的数组名称。如果没有指定数组名称
 
 ## 例子
 
-```shell
+```
 # 常见的读取形式。
 mapfile < source_file target_array
 cat source_file |mapfile target_array

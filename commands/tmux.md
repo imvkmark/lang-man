@@ -20,7 +20,7 @@ Tmux是一个优秀的终端复用软件，类似GNU Screen，但来自于OpenBS
 
 ## 安装
 
-```shell
+```
 # 在 Mac OS 中，通过 brew 安装
 brew install tmux
 # ubuntu版本下直接apt-get安装
@@ -327,7 +327,7 @@ make && make install
 1）进入tmux面板后，一定要先按ctrl+b，然后松开，再按其他的组合键才生效。
 2）常用到的几个组合键：
 
-```shell
+```
 ctrl+b ?        #     显示快捷键帮助
 ctrl+b 空格键   #     采用下一个内置布局，这个很有意思，在多屏时，用这个就会将多有屏幕竖着展示
 ctrl+b !        #     把当前窗口变为新窗口

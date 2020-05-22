@@ -5,7 +5,7 @@ groups
 
 ## 概要
 
-```shell
+```
 groups [OPTION]... [username]...
 ```
 
@@ -15,7 +15,7 @@ groups [OPTION]... [username]...
 
 ## 选项
 
-```shell
+```
 --help       显示帮助信息并退出。
 --version    显示版本信息并退出。
 ```
@@ -32,7 +32,7 @@ username（可选）：可以是一到多个，不提供时默认为当前用户
 
 显示linux用户所属的组
 
-```shell
+```
 [root@localhost ~]# groups linux
 linux : linux adm dialout cdrom plugdev lpadmin admin sambashare
 ```
