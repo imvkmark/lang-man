@@ -30,7 +30,7 @@ tailf logfile # 动态跟踪日志文件logfile，最初的时候打印文件的
 
 目标：指定目标日志。
 
-### 实例
+## 实例
 
 ```
 tailf log/WEB.LOG 

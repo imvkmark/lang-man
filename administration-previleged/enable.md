@@ -3,10 +3,11 @@ enable
 
 启动或禁用shell内建命令
 
+## 语法
 
-### 概要
-
+```
 enable [-a] [-dnps] [-f filename] [name ...]
+```
 
 ### 主要用途
 
@@ -27,7 +28,7 @@ enable [-a] [-dnps] [-f filename] [name ...]
 - 从动态库中加载内建命令。
 - 移除从动态库中加载的内建命令。
 
-### 选项
+## 选项
 
 
 ```
@@ -41,7 +42,7 @@ enable [-a] [-dnps] [-f filename] [name ...]
 -as 打印posix标准内建命令，无论是否禁用。
 ```
 
-#### 参数
+## 参数
 
 filename：动态库文件名。
 

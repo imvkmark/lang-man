@@ -20,7 +20,7 @@ resize [-cu][-s <列数> <行数>]
 -u 　就算用户环境并非Bourne Shell，也用Bourne Shell指令改变视窗大小。
 ```
 
-### 实例
+## 实例
 
 使用 C shell
 

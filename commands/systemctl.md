@@ -16,7 +16,7 @@ systemctl
 | 停止某服务 | service httpd stop | systemctl stop httpd.service |
 | 重启某服务 | service httpd restart | systemctl restart httpd.service |
 
-### 实例
+## 实例
 
 ```
 systemctl start nfs-server.service . # 启动nfs服务

@@ -13,7 +13,7 @@ pigz [ -cdfhikKlLmMnNqrRtz0..9,11 ] [ -b blocksize ] [ -p threads ] [ -S suffix 
 unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ name ...  ]
 ```
 
-### 参数
+## 参数
 
 ```
 -0 to -9, -11       # Compression level (level 11, zopfli, is much slower)
@@ -49,7 +49,7 @@ unpigz [ -cfhikKlLmMnNqrRtz ] [ -b blocksize ] [ -p threads ] [ -S suffix ] [ na
 --                  # All arguments after "--" are treated as files
 ```
 
-### 实例
+## 实例
 
 可以结合`tar`使用, 压缩命令
 

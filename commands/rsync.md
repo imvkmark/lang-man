@@ -92,7 +92,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 -h, --help 显示帮助信息。
 ```
 
-### 实例
+## 实例
 
  **SSH方式**
 

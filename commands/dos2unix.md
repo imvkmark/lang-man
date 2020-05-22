@@ -23,11 +23,11 @@ dos2unix [-hkqV] [-c convmode] [-o file ...] [-n infile outfile ...]
 -n：写入到新文件
 ```
 
-### 参数
+## 参数
 
 参数：需要转换到文件。
 
-### 实例
+## 实例
 
 最简单的用法就是dos2unix直接跟上文件名：
 

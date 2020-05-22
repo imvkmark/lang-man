@@ -29,7 +29,7 @@ htop 官网：http://htop.sourceforge.net/
 htop
 ```
 
-### 参数
+## 参数
 
 ```
 -C --no-color               使用单色配色方案

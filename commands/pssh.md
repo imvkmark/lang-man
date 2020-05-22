@@ -46,7 +46,7 @@ python setup.py install
 -P：打印出服务器返回信息
 ```
 
-### 实例
+## 实例
 
 获取每台服务器的uptime：
 

@@ -19,7 +19,7 @@ vgscan(选项)
 --ignorerlockingfailure：忽略锁定失败的错误。
 ```
 
-### 实例
+## 实例
 
 使用vgscan命令扫描系统中所有的卷组。在命令行中输入下面的命令：
 

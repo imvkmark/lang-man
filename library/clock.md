@@ -30,7 +30,7 @@ clock [--adjust][--debug][--directisa][--getepoch][--hctosys][--set --date="<日
 --version 　显示版本信息。
 ```
 
-### 实例
+## 实例
 
 获取当前的时间
 
