@@ -166,6 +166,7 @@
    ltrace.md
    lynx.md
    mail.md
+   man.md
    mailq.md
    mailstat.md
    mapfile.md

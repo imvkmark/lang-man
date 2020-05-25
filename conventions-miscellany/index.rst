@@ -4,7 +4,6 @@
    :maxdepth: 1
 
    runlevel.md
-   man.md
    ip.md
    hostname.md
    declare.md
