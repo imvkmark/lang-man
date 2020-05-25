@@ -10,7 +10,6 @@
    diff.md
    dirname.md
    echo.md
-   env.md
    exec.md
    expr.md
    file.md

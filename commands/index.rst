@@ -148,6 +148,7 @@
    let.md
    lftp.md
    lftpget.md
+   env.md
    lha.md
    ln.md
    locate.md
