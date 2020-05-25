@@ -25,6 +25,7 @@ Man 文档
    :caption: 软件/系统(X)
 
    other/index
+   software/index
    os/index
 
 Indices and tables

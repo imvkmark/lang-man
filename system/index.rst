@@ -21,6 +21,7 @@
    rename.md
    rmdir.md
    setsid.md
+   access.md
    shutdown.md
    stat.md
    stty.md
