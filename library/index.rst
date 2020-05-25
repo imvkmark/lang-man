@@ -6,7 +6,6 @@
    mysql.md
    alias.md
    basename.md
-   clear.md
    clock.md
    diff.md
    dirname.md

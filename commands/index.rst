@@ -152,6 +152,7 @@
    ln.md
    locate.md
    logger.md
+   clear.md
    logname.md
    look.md
    lpc.md
