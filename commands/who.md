@@ -1,76 +1,89 @@
-who
-===
+# man - who(1)
 
-显示当前所有登陆用户的信息。
 
-## 概要
+ who - 显示当前所有登陆用户的信息
+ 
+
+## 语法
 
 ```
-who [OPTION]... [file] [am i]
+who [OPTION]... [ FILE | ARG1 ARG2 ]
 ```
 
-## 主要用途
+当没有给出非选项参数时，按以下字段顺序为每个当前用户打印信息：登录用户名称，终端信息，登录时间，远程主机或X display。
+当用户执行 `who am i` 时，只显示运行该命令的用户的信息。
 
-- 当没有给出非选项参数时，按以下字段顺序为每个当前用户打印信息：登录用户名称，终端信息，登录时间，远程主机或X display。
-- 当用户执行 `who am i` 时，只显示运行该命令的用户的信息。
+## 示例
+
+```
+$ who
+duoli    console  May 15 18:43 
+duoli    ttys000  May 25 23:43 
+
+$ who -q
+duoli    duoli    
+
+$ who -T
+duoli    - console  May 15 18:43 
+duoli    + ttys000  May 25 23:43 
+```
 
 ## 选项
 
-```
--a, --all                                等价于调用 '-b -d --login -p -r -t -T -u'。
--b, --boot                               上次系统启动的时间。
--d, --dead                               打印 dead 状态的进程。
--H, --heading                            打印列标题行。
--l, --login                              打印系统登录进程。
---lookup                                 尝试通过 DNS 规范主机名。
--m                                       仅显示和标准输入关联的主机名和用户。
--p, --process                            打印由 init 生成的活动进程。
--q, --count                              列出所有已登录的用户的名称和数量。
--r, --runlevel                           打印当前运行级别。
--s, --short                              仅打印名称、行和时间（默认）。
--t, --time                               打印上次系统时钟更改。
--T, -w, --mesg, --message, --writable    将 '+、-、?' 中的一个作为用户的消息状态添加到用户名称后面。
--u, --users                              列出登录的用户。
---help                                   显示帮助信息并退出。
---version                                显示版本信息并退出。
+`-a`, `--all`
+等价于 `-b -d --login -p -r -t -T -u`
 
-关于 -T 选项的 '+、-、?'：
-'+'  允许写入信息
-'-'  禁止写入信息
-'?'  不能查找到终端设备
-```
+`-b`, `--boot`
+上次系统启动的时间
 
-## 参数
+`-d`, `--dead`
+打印 dead 状态的进程。
 
-file（可选）：指定 `file` 代替默认的 `/var/run/utmp` 、`/etc/utmp` ；通常使用 `/var/log/wtmp` 作为参数用于查看过去登陆系统的用户。
+`-H`, `--heading`
+显示各栏位的标题信息列
 
-## 返回值
+`-l`, `--login`
+打印系统登录进程
 
-返回0表示成功，返回非0值表示失败。
+`--lookup`
+尝试通过 DNS 规范主机名
 
-## 例子
+`-m`
+此参数的效果和指定"am i"字符串相同
+仅仅输入相关的主机名称和用户
 
-```
-[root@localhost ~]# who
-root     pts/0        2013-08-19 15:04 (192.168.0.134)
-root     pts/1        2013-12-20 10:37 (180.111.155.40)
+`-p`, `--process`
+打印由 init 生成的活动进程
 
-[root@localhost ~]# who -q
-root root
-# users=2
+`-q`, `--count`
+只显示登入系统的帐号名称和总人数
 
-[root@localhost ~]# who -H
-NAME     LINE         time             COMMENT
-root     pts/0        2013-08-19 15:04 (192.168.0.134)
-root     pts/1        2013-12-20 10:37 (180.111.155.40)
+`-r`, `--runlevel`
+打印当前运行级别
 
-[root@localhost ~]# who -w
-root     + pts/0        2013-08-19 15:04 (192.168.0.134)
-root     + pts/1        2013-12-20 10:37 (180.111.155.40)
-```
+`-s`, `--short`
+显示用户名, 行, 时间(默认)
+
+`-t`, `--time`
+打印上次系统时钟更改
+
+`-T, -w`, `--mesg`, `--message`, `--writable`
+添加用户信息的状态(+, -, ?)
+> `-w` mac 系统不存在
+
+`-u`, `--users`
+显示登录的用户
+
+`--help` 
+帮助
+
+`--version`
+版本信息
+
+指定 `file` 代替默认的 `/var/run/utmp` 、`/etc/utmp` ；通常使用 `/var/log/wtmp` 作为参数用于查看过去登陆系统的用户.
+
+If ARG1 ARG2 given, -m presumed: 'am i'    or  'mom  likes'  are usual.
 
 ## 注意
 
-1. 该命令是`GNU coreutils`包中的命令，相关的帮助信息请查看`man -s 1 who`，`info coreutils 'who invocation'`。
-
-
+该命令是`GNU coreutils`包中的命令，相关的帮助信息请查看`man -s 1 who`，`info coreutils 'who invocation'`
